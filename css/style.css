@@ -1,0 +1,273 @@
+@import url('fonts.css');
+
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #FFFFFF;
+}
+#header {
+	width: 100%;
+	min-height: 54px;
+	height: 16%;
+	top: 0;
+	position: relative;
+}
+#fondoHeader {
+	background: url(img/encabezado.png) left no-repeat;
+	background-position-x: 1%;
+	background-size: auto 100%;
+	background-color: #F8F8F8;
+	width: 100%;
+}
+
+#wrapper {
+	background-color: #FFFFFF;
+	background-size: auto 100%;
+	padding-top: 0.25em;
+	min-width: 900px;
+	width: 76%;
+	margin: auto;	
+}
+
+#footer {
+	background-color: #005E84;
+	color: #FFF;
+	width: 100%;
+	min-height: 72px;
+	height: 21%;	
+}
+#menu {
+	position: absolute;
+	font-family: Georgia;
+	font-size: 12px;
+	border-top: 2px solid #CCCCCC;
+	border-bottom: 1px solid #E3E3E3;
+	bottom: 0;
+	background-color: #EFEFEF;
+	width: 90%;
+	padding-right: 10%;
+}
+.itemmenu {
+	float: right;
+	padding-right: 3%;
+	padding-left: 3%;
+	margin-bottom: 0.7em;
+	margin-top: 1em;
+	border: 0px solid #1C2172;
+	border-right-width: 1px;
+}
+.itemmenu:hover {
+	text-shadow: 0 0 10px #fff;;
+}
+.ultimo {
+	border: 0px;	
+}
+.itemmenu a:link, .itemmenu a:visited, .itemmenu a {
+	color: #21277D;
+	text-decoration: none;
+	float: left;
+	overflow: hidden;
+	cursor: pointer;
+}
+.vSeparator {
+	width: 0.1em;
+	box-shadow: inset 2px 0 2px -2px rgba(0,0,0,0.5);
+	min-height: 180px;
+	height: 90%;
+	border: 0;
+	margin: 0.5em;
+	float: left;
+}
+.hSeparator {
+	height: 0.1em;
+	border: 0;
+	box-shadow: inset 0 2px 2px -2px rgba(0,0,0,0.5);
+	margin: 0.5em;
+	width: 80%;
+	float: left;
+}
+.mitadV {
+	min-height: 40%;
+	width: 100%;
+}
+#footer ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0 0 0 10px;
+}
+.copyright {
+	color: #FFFFFF;
+	font-family: Georgia;
+	text-align: center;
+	font-size: 8px;
+	position: absolute;
+	bottom: 0;
+	left: 40%;
+	margin: 0px;
+	margin-bottom: 2px;
+}
+.redes {
+	font-size: 10px;
+	color: #FFFFFF;
+	font-family: Georgia;
+	float: right;
+	margin-top: 1%;
+	cursor: pointer;
+}
+.containerLinkFoot {
+	margin-left: 10%;
+	min-height: 54px;
+	width: 80%;
+	margin-top: 1%;
+	float: left;
+}
+.linkFoot {
+	color: #FFFFFF;
+	font-family: Georgia;
+	font-size:10px;
+	float: left;
+	padding: 0 5% 0 2em;
+	border-right: inset #4D4D4D 1px;
+	width: 25%;
+}
+.linkFootUlt {
+	color: #FFFFFF;
+	font-family: Georgia;
+	float: left;
+	padding: 0 1em 0 2em;
+	border-right: inset #4D4D4D 0px;
+	width: 35%;
+}
+.linkFoot li, .linkFootUlt li {
+	font-size: 10px;
+	padding-top: 5px;
+}
+.linkFoot h3, .linkFootUlt h3 {
+	font-size: 12px;
+	margin: 0;
+}
+.linkFoot h4, .linkFootUlt h4 {
+	font-size: 10px;
+	float: right;
+	margin: 0;
+	padding-top: 3%;
+}
+.containerLinkFoot a, .containerLinkFoot a:link, .containerLinkFoot a:visited {
+	color: #FFFFFF;
+	text-decoration: none;
+	cursor: pointer;
+}
+/*Contenido*/
+
+#wrapperHerramientas {
+	width: 100%;
+	height: 5%;
+}
+#dondeEstoy {
+	float: left;
+	width: 23%;
+	height: 100%;
+}
+#herramientas {
+	min-width: 430px;
+	width: 54%;
+	height: 100%;
+	float: right;
+}
+#tamanioLetra {
+	width: 50%;
+	float: right;
+}
+#terceraColumna {
+	width: 18%;
+	height: 100%;
+	float: right;
+}
+#navegacion {
+	float: left;
+	width: 23%;
+	min-height: 330px;
+	height: 90%;
+	background-color: #F9F9F9;
+}
+#navegacion #titulo {
+	background-color: #F2F2F2;
+	color: #818181;
+	font-size: 16px;
+	font-style: italic;
+	font-family: acLight;
+	margin: 0;
+	float: left;
+	width: 100%;
+}
+#navegacion ul {
+	list-style-type: none;
+}
+#navegacion #linksNavegacion {
+	background-color: #F9F9F9;
+	font-size: 14px;
+	font-family: acLight;
+	margin: 0;
+	float: left;
+	width: 100%;
+}
+.linkNavegacion {
+	cursor: pointer;
+	color: #818181;
+	margin: 0 0 10px 0;
+	padding-right: 4%;
+}
+.linkSeleccionado {
+	color: #444;
+}
+#cuerpo {
+	min-width: 430px;
+	width: 52%;
+	min-height: 330px;	
+	margin: 5px 10px 3px 5px;
+	padding-left: 3%;
+	float: left;
+}
+#cuerpo h2 {
+	font-size: 32px;
+	font-style: italic;
+	font-family: acLight;
+	color: #007AAD;
+	margin: 5px 0 10px 0;
+}
+#cuerpo h3 {
+	font-size: 14px;
+	font-family: acLight;
+	color: #0E80B4;
+	margin: 0 0 5px 0;
+}
+#cuerpo p {
+	font-size: 10px;
+	font-family: Verdana;
+}
+#relacionados {
+	width: 18%;
+	height: 90%;
+	float: right;
+}
+#relacionados div {
+	background-color: #F7F5CF;
+	height: 40%;
+	margin-bottom: 4%;
+	padding: 5px 5px 3px 3px;
+}
+#relacionados p {
+	font-size: 14px;
+	font-family: acLight;
+	color: #0078AD;
+	padding: 0 3% 0 3%;
+}
+#relacionados h4 {
+	margin: 5px 0 3px 0;
+	font-size: 10px;
+	padding: 0 3% 0 3%;
+}
+/*Contenido*/
+

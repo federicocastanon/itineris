@@ -1,0 +1,82 @@
+@import url('fonts.css');
+
+.imagenPrincipal{
+	background-color: #A9CDDD;
+	background-image:  url('images/homePrincipal.png') ;
+	background-size:contain;
+	background-repeat: no-repeat;
+	background-position-x: 100%;
+	background-position-y: 2px;
+	min-width: 744px;
+	min-height: 205px;
+	width: 100%;
+	height: 45%;	
+	float: left;
+	margin-top: 2%;
+}
+.imagenPrincipal p{
+	font-size: 16px;
+	font-family: acLight;
+	font-style: italic;
+	float: left;
+	text-align: left;
+	margin-left: 3%;
+	margin-top:3%;
+	color: #FFFFFF;
+	width: 33%;
+	
+}
+
+.contenedorLinksHome{
+	width: 100%;
+	height: 40%;
+	margin: 1% 0 1% 0;
+	float: left;
+}
+
+.linkHome{
+	margin: 1% 2% 0 2%;
+	padding: 0 0 0 5px;
+	min-width : 180px;
+	width: 20%;
+	min-height: 80px;	
+	height: 90%;	
+	background-color: #F7F5CF;
+	text-align: left;
+	float: left;
+	position: relative;
+}
+
+.linkHome h3{
+	font-size: 16px;
+	font-family: acLight;
+	color: #005E84;
+	padding: 0 10% 0 3%;
+}	
+.linkHome p{
+	font-size:  12px;
+	font-family: acLight;
+	color: #005E84;
+	height: 35%;
+	overflow: hidden;
+	padding: 0 10% 0 3%;
+}
+.linkHome:hover p{
+	min-height: 85%;
+	height: auto;
+}
+
+.linkHome:hover{	
+	min-height: 100%;
+	height: auto;
+	z-index: 5;
+	margin-top: -15%;
+}
+.linkHome h4{
+	font-size:  12px;
+	font-family: acLight;
+	color: #8F1F32;	
+	float: right;
+	margin: 0;
+	padding: 0 10% 3% 0;
+}
