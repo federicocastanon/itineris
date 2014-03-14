@@ -3,7 +3,7 @@ jQuery.fn.animateAuto = function(prop, speed, callback) {
 	return this.each(function(i, el) { el = jQuery(el), elem = el.clone().css({
 			"overflow" : "visible",
 			"height" : "auto",
-			"max-width" : '300px'
+			"max-width" : '180px'
 		}).appendTo("body");
 		 height = elem.css("height"), heightNeg = elem.height() * 1 / -3, elem.remove();
 		var margin = heightNeg + 'px 0 0 0';
@@ -27,9 +27,9 @@ $(document).ready(function() {
 		$(this).children('p').each(function(i, el) { el = jQuery(el), elem = el.clone().css({
 			"overflow" : "visible",
 			"height" : "auto",
-			"max-width" : '300px'
+			"max-width" : '180px'
 		}).appendTo("body");
-		 valHeight = elem.height() * 2, heightNeg = elem.height() * 2 / -3, elem.remove();
+		 valHeight = elem.height() * 1.9, heightNeg = elem.height() * 2 / -3, elem.remove();
 		
 		});
 		 var margin = heightNeg + 'px 2% 0 2%';
