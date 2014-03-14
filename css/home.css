@@ -61,17 +61,7 @@
 	overflow: hidden;
 	padding: 0 10% 0 3%;
 }
-.linkHome:hover p{
-	min-height: 85%;
-	height: auto;
-}
 
-.linkHome:hover{	
-	min-height: 100%;
-	height: auto;
-	z-index: 5;
-	margin-top: -15%;
-}
 .linkHome h4{
 	font-size:  12px;
 	font-family: acLight;

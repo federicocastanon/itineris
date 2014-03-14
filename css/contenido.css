@@ -1,0 +1,27 @@
+.titulo {
+	font-family: Verdana, Geneva, sans-serif;
+	font-weight: bold;
+	color: #005e84;
+}
+.titulo strong {
+	color: #005e84;
+}
+.titulomenor {
+	color: #005e84;
+}
+.texto {
+	font-family: Verdana, Geneva, sans-serif;
+	color: #3B3B3B;
+}
+.lista {
+	font-family: Verdana, Geneva, sans-serif;
+	color: #3B3B3B;
+}
+
+.destacado {
+	font-weight: bold;
+}
+.destacado em {
+	font-family: Verdana, Geneva, sans-serif;
+	color: #3B3B3B;
+}

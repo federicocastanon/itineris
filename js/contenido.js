@@ -2,13 +2,13 @@ $(document).ready(function() {
 	var navegacion = {};
 	//formacion
 
-	navegacion["autoDet"] = "pages/autoDeterminacion.html";
+	navegacion["autoDet"] = "pages/autoDet.html";
 	navegacion["apoyos"] = "pages/apoyos.html";
-	navegacion['planiPersona'] = "pages/planificacionPersona.html";
-	navegacion['mecaExclIncl'] = "pages/informatica.html";
-	navegacion["derechos"] = "pages/edfisica.html";
-	navegacion['calVida'] = "pages/extraescolar.html";
-	navegacion['habBas'] = "pages/extraescolar.html";
+	navegacion['planiPersona'] = "pages/planiPersona.html";
+	navegacion['mecaExclIncl'] = "pages/mecaExclIncl.html";
+	navegacion["derechos"] = "pages/derechos.html";
+	navegacion['calVida'] = "pages/calVida.html";
+	navegacion['habBas'] = "pages/habBas.html";
 	
 
 	$('#linksNavegacion > ul > .linkNavegacion').each(function(index) {
@@ -22,7 +22,7 @@ $(document).ready(function() {
 
 			$('#cuerpo').fadeOut('slow', function() {
 				$('#cuerpo > #tituloSeccion').html($(linkS).html());
-				//$('#cuerpo > #bajadaSeccion').html($(linkS).find('p').html());
+				
 				$.get(navegacion[$(linkS).attr("rel")], function(msg) {
 					$('#cuerpoContenido').html(msg);
 					$('#cuerpo').fadeIn('slow');
