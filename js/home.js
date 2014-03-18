@@ -46,4 +46,16 @@ $(document).ready(function() {
 			margin: '1% 2% 0 2%'
 		}, 1000);
 	});
+	
+	$('.imagenPrincipal > ul').height($(".imagenPrincipal").height());
+	$('.imagenPrincipal').unslider({
+		speed : 1000, //  The speed to animate each slide (in milliseconds)
+		delay : 7000, //  The delay between slide animations (in milliseconds)
+		complete : function() {
+			$('.imagenPrincipal > ul').height($(".imagenPrincipal").height());
+		}, //  A function that gets called after every slide animation
+		keys : true, //  Enable keyboard (left, right) arrow shortcuts
+		dots : true, //  Display dot navigation
+		fluid : false              //  Support responsive design. May break non-responsive designs
+	});
 });

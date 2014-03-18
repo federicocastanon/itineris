@@ -1,30 +1,43 @@
 @import url('fonts.css');
-
-.imagenPrincipal{
+.imagenPrincipal {
 	background-color: #A9CDDD;
-	background-image:  url('images/homePrincipal.png') ;
-	background-size:contain;
+	background-size: contain;
 	background-repeat: no-repeat;
 	background-position-x: 100%;
 	background-position-y: 2px;
 	min-width: 744px;
 	min-height: 205px;
 	width: 100%;
-	height: 45%;	
+	height: 45%;
 	float: left;
 	margin-top: 2%;
 }
-.imagenPrincipal p{
+.imagenPrincipal ul li p {
 	font-size: 16px;
 	font-family: acLight;
 	font-style: italic;
 	float: left;
 	text-align: left;
 	margin-left: 3%;
-	margin-top:3%;
+	margin-top: 3%;
 	color: #FFFFFF;
 	width: 33%;
-	
+}
+#diapo1 {
+	background: #A9CDDD url(images/banner-slim1.png) no-repeat right top;
+	background-size: contain;
+}
+#diapo2 {
+	background: #A9CDDD url(images/banner-slim2.png) no-repeat right top;
+	background-size: contain;
+}
+#diapo3 {
+	background: #A9CDDD url(images/banner-slim3.png) no-repeat right top;
+	background-size: contain;
+}
+#diapo4 {
+	background: #A9CDDD url(images/banner-slim4.png) no-repeat right top;
+	background-size: contain;
 }
 
 .contenedorLinksHome{
@@ -62,10 +75,11 @@
 	padding: 0 10% 0 3%;
 }
 
-.linkHome h4{
+.linkHome div.pie{
 	font-size:  12px;
 	font-family: acLight;
 	color: #8F1F32;	
+	font-weight: bold;
 	float: right;
 	margin: 0;
 	padding: 0 10% 3% 0;

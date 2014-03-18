@@ -6,6 +6,9 @@ $(document).ready(function() {
 			$("#fondoHeader").height($("#header").height() - $("#menu").height() - 1);
 			$("#wrapper").height($("html").height() - $("#header").height() - $("#footer").height() - 5);
 			//el 5 es por el padding
+			$('#fondoHeader').click(function(){
+				window.location.href = "home.html";
+			});
 		});
 
 	});

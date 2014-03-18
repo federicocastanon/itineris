@@ -163,6 +163,7 @@ html, body {
 
 #wrapperHerramientas {
 	width: 100%;
+	min-height: 36px;
 	height: 5%;
 }
 #dondeEstoy {
@@ -173,12 +174,22 @@ html, body {
 #herramientas {
 	min-width: 430px;
 	width: 54%;
-	height: 100%;
+	height: 100%;	
 	float: right;
+	margin-bottom: 15px;
 }
-#tamanioLetra {
-	width: 50%;
+#wrapperTamanioLetra{
+	width: 98px;
+	height: 36px;
 	float: right;
+	border: 0;
+	background: url(images/textsize.png) no-repeat;
+}
+#tamanioLetra {		
+	float: right;
+	width: 50px;
+	margin-right: 33px;
+	border: 0;
 }
 #terceraColumna {
 	width: 18%;
