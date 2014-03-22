@@ -199,8 +199,7 @@ html, body {
 #navegacion {
 	float: left;
 	width: 23%;
-	min-height: 330px;
-	height: 90%;
+	min-height: 330px;	
 	background-color: #F9F9F9;
 }
 #navegacion #titulo {
@@ -212,6 +211,7 @@ html, body {
 	margin: 0;
 	float: left;
 	width: 100%;
+	cursor: pointer;
 }
 #navegacion ul {
 	list-style-type: none;
@@ -220,7 +220,7 @@ html, body {
 	background-color: #F9F9F9;
 	font-size: 14px;
 	font-family: acLight;
-	margin: 0;
+	margin: 3% 0 0 0	;
 	float: left;
 	width: 100%;
 }
@@ -229,9 +229,11 @@ html, body {
 	color: #818181;
 	margin: 0 0 10px 0;
 	padding-right: 4%;
+	cursor: pointer;
 }
 .linkSeleccionado {
 	color: #444;
+	border-bottom: 2px solid #D0D0D0;
 }
 #cuerpo {
 	min-width: 430px;
@@ -280,5 +282,53 @@ html, body {
 	font-size: 10px;
 	padding: 0 3% 0 3%;
 }
+
+#enlacesPermanentes{
+	height: 56px;	
+	float: right;
+	margin-top:1%;
+	margin-right: 12%;
+	width: 340px;
+}
+
+#enlacesPermanentes div{
+	height: 30px;
+	cursor: pointer;
+	float:right;	
+	margin-left: 5%;
+	padding-right: 5%;
+}
+#correo{
+	width: 42px;
+	border-right: solid 1px #EBEBEB;
+	background: url(images/correo.png) no-repeat;
+}
+#correo:hover{
+	background: url(images/correo-onhover.png) no-repeat;
+}
+#cursosVirtuales{
+	width: 43px;
+	border-right: solid 1px #EBEBEB;
+	background: url(images/cursos_virtuales.png) no-repeat;	
+}
+#cursosVirtuales:hover{
+	background: url(images/cursos_virtuales-onhover.png) no-repeat;
+}
+#facebook{
+	width: 36px;
+	border-right: solid 1px #EBEBEB;
+	background: url(images/fb.png) no-repeat;	
+}
+#facebook:hover{
+	background: url(images/fb-onhover.png) no-repeat;
+}
+#biblioteca{		
+	width: 44px;
+	background: url(images/biblioteca.png) no-repeat;	
+}
+#biblioteca:hover{
+	background: url(images/biblioteca-onhover.png) no-repeat;
+}
+
 /*Contenido*/
 
