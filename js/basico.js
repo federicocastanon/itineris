@@ -4,9 +4,13 @@ $(document).ready(function() {
 		$.get("footer.html", function(footCont) {
 			$('#footer').html(footCont);
 			$("#fondoHeader").height($("#header").height() - $("#menu").height() - 1);
-			$("#wrapper").height($("html").height() - $("#header").height() - $("#footer").height() - 5);
+			var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
 			//el 5 es por el padding
-			$('#fondoHeader').click(function(){
+			var altura2 = $("#cuerpo").height() * 1.1;
+			//el cuerpo crece con el contenido, al wrapper hay que hacerlo crecer
+			$("#wrapper").height(altura1 < altura2 ? altura2 : altura1);
+			//el 5 es por el padding
+			$('#logo').click(function() {
 				window.location.href = "home.html";
 			});
 		});
@@ -28,4 +32,4 @@ $(document).ready(function() {
 		}
 	});
 
-}); 
+});

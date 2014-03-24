@@ -13,22 +13,29 @@ html, body {
 	height: 16%;
 	top: 0;
 	position: relative;
+	display: compact;
 }
 #fondoHeader {
+	background-color: #F8F8F8;
+}
+#logo {
 	background: url(img/encabezado.png) left no-repeat;
 	background-position-x: 1%;
 	background-size: auto 100%;
-	background-color: #F8F8F8;
-	width: 100%;
+	background-color: #F8F8F8;float left;
+	width: 50%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 #wrapper {
 	background-color: #FFFFFF;
 	background-size: auto 100%;
 	padding-top: 0.25em;
-	min-width: 900px;
+	min-width: 960px;
 	width: 76%;
-	margin: auto;	
+	margin: auto;
 }
 
 #footer {
@@ -36,7 +43,7 @@ html, body {
 	color: #FFF;
 	width: 100%;
 	min-height: 72px;
-	height: 21%;	
+	height: 21%;
 }
 #menu {
 	position: absolute;
@@ -62,7 +69,7 @@ html, body {
 	text-shadow: 0 0 10px #fff;;
 }
 .ultimo {
-	border: 0px;	
+	border: 0px;
 }
 .itemmenu a:link, .itemmenu a:visited, .itemmenu a {
 	color: #21277D;
@@ -102,11 +109,8 @@ html, body {
 	font-family: Georgia;
 	text-align: center;
 	font-size: 8px;
-	position: absolute;
-	bottom: 0;
-	left: 40%;
-	margin: 0px;
-	margin-bottom: 2px;
+	float: right;
+	margin: 0 30% 2px 0;
 }
 .redes {
 	font-size: 10px;
@@ -122,11 +126,12 @@ html, body {
 	width: 80%;
 	margin-top: 1%;
 	float: left;
+	height: 80%;
 }
 .linkFoot {
 	color: #FFFFFF;
 	font-family: Georgia;
-	font-size:10px;
+	font-size: 10px;
 	float: left;
 	padding: 0 5% 0 2em;
 	border-right: inset #4D4D4D 1px;
@@ -174,18 +179,18 @@ html, body {
 #herramientas {
 	min-width: 430px;
 	width: 54%;
-	height: 100%;	
+	height: 100%;
 	float: right;
 	margin-bottom: 15px;
 }
-#wrapperTamanioLetra{
+#wrapperTamanioLetra {
 	width: 98px;
 	height: 36px;
 	float: right;
 	border: 0;
 	background: url(images/textsize.png) no-repeat;
 }
-#tamanioLetra {		
+#tamanioLetra {
 	float: right;
 	width: 50px;
 	margin-right: 33px;
@@ -198,8 +203,8 @@ html, body {
 }
 #navegacion {
 	float: left;
-	width: 23%;
-	min-height: 330px;	
+	min-height: 330px;
+	width: 25%;
 	background-color: #F9F9F9;
 }
 #navegacion #titulo {
@@ -220,7 +225,7 @@ html, body {
 	background-color: #F9F9F9;
 	font-size: 14px;
 	font-family: acLight;
-	margin: 3% 0 0 0	;
+	margin: 3% 0 0 0;
 	float: left;
 	width: 100%;
 }
@@ -238,7 +243,7 @@ html, body {
 #cuerpo {
 	min-width: 430px;
 	width: 52%;
-	min-height: 330px;	
+	min-height: 330px;
 	margin: 5px 10px 3px 5px;
 	padding-left: 3%;
 	float: left;
@@ -283,50 +288,55 @@ html, body {
 	padding: 0 3% 0 3%;
 }
 
-#enlacesPermanentes{
-	height: 56px;	
+#enlacesPermanentes {
+	height: 56px;
 	float: right;
-	margin-top:1%;
+	margin-top: 1%;
 	margin-right: 12%;
 	width: 340px;
 }
 
-#enlacesPermanentes div{
+#enlacesPermanentes div {
 	height: 30px;
 	cursor: pointer;
-	float:right;	
+	float: right;
 	margin-left: 5%;
 	padding-right: 5%;
 }
-#correo{
+#enlacesPermanentes div a {
+	height: 30px;
+	width: 50px;
+	display: block;
+}
+#correo {
 	width: 42px;
 	border-right: solid 1px #EBEBEB;
 	background: url(images/correo.png) no-repeat;
 }
-#correo:hover{
+#correo:hover {
 	background: url(images/correo-onhover.png) no-repeat;
 }
-#cursosVirtuales{
+#cursosVirtuales {
 	width: 43px;
 	border-right: solid 1px #EBEBEB;
-	background: url(images/cursos_virtuales.png) no-repeat;	
+	background: url(images/cursos_virtuales.png) no-repeat;
 }
-#cursosVirtuales:hover{
+#cursosVirtuales:hover {
 	background: url(images/cursos_virtuales-onhover.png) no-repeat;
 }
-#facebook{
+#facebook {
 	width: 36px;
 	border-right: solid 1px #EBEBEB;
-	background: url(images/fb.png) no-repeat;	
+	background: url(images/fb.png) no-repeat;
 }
-#facebook:hover{
+#facebook:hover {
 	background: url(images/fb-onhover.png) no-repeat;
 }
-#biblioteca{		
+#biblioteca {
 	width: 44px;
-	background: url(images/biblioteca.png) no-repeat;	
+	background: url(images/biblioteca.png) no-repeat;
 }
-#biblioteca:hover{
+#biblioteca:hover {
 	background: url(images/biblioteca-onhover.png) no-repeat;
 }
 

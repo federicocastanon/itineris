@@ -13,18 +13,60 @@
 	</head>
 	<body>
 		<div id="header">
-			
+
 		</div>
 		<div id="wrapper">
-			<div id="navegacion"></div>
-			<div id="cuerpo"></div>
-			<div id="relacionados">
-				<div id="relacion1"></div>
-				<div id="relacion2"></div>
+			<div id="cuerpo">
+				<form name="formu" id="formu" action="index.php?unirse=1&amp;ubi=0&amp;sububi=7" method="post" enctype="multipart/form-data">
+					<div class="formu">
+
+						<div class="frmtxt">
+							<label for="nombre">Nombre y Apellido(*):</label>
+						</div>
+						<div class="frminp">
+							<input type="text" name="nombre" id="nombre" tabindex="1" value="">
+						</div>
+
+						<div class="frmtxt">
+							<label for="empresa">Empresa o Institución</label>
+						</div>
+						<div class="frminp">
+							<input type="text" name="empresa" id="empresa" tabindex="2" value="">
+						</div>
+						<div class="frmtxt">
+							<label for="telefono">Teléfono</label>
+						</div>
+						<div class="frminp">
+							<input type="text" name="telefono" id="telefono" tabindex="3" value="">
+						</div>
+
+						<div class="frmtxt">
+							<label for="mail">Mail (*):</label>
+						</div>
+						<div class="frminp">
+							<input id="mail" type="text" value="" tabindex="4" name="mail">
+						</div>
+
+						<div class="frmtxt">
+							<label for="consulta">Consultas (*):</label>
+						</div>
+						<div class="frminp">
+							<textarea id="consulta" name="consulta" cols="50" rows="3" tabindex="5"></textarea>
+</div>
+						<div class="botones">
+							<input type="reset" value="Eliminar Datos">
+							&nbsp;
+							<input type="button" value="Enviar" id="manda" name="manda" onclick="javascript:validar();">
+						</div>
+						<div class="frminp" style="font-size: 0.85em;">
+							(*) Campos obligatorios
+						</div>
+					</div>
+				</form>
 			</div>
 		</div>
 		<div id="footer">
-			
+
 		</div>
 	</body>
 </html>

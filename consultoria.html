@@ -1,30 +1,82 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
 	<head>
 		<title>Itineris</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<meta name="description" content="" />
 		<meta name="keywords" content=""/>
 		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
-		<link rel="shortcut icon" href="css/img/favicon.png">
-		<link rel="icon" type="image/ico" href="css/img/favicon.png">
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+		<link rel="stylesheet" href="css/contenido.css" type="text/css" media="screen"/>
+		<link rel="shortcut icon" type="image/ico" href="css/img/favicon.png">
+
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/jqueryuimin.js"></script>
+		<link rel="stylesheet" href="css/jqueryuimin.css" type="text/css" media="screen"/>
 		<script type="text/javascript" src="js/basico.js"></script>
+		<script type="text/javascript" src="js/cons.js"></script>
 	</head>
 	<body>
-		<div id="header">
-
-		</div>
+		<div id="header"></div>
 		<div id="wrapper">
-			<div id="navegacion"></div>
-			<div id="cuerpo"></div>
+			<div id="navegacion">
+				<div id="titulo" class="linkSeleccionado" rel="consultoria">
+					Consultoria y Herramientas
+				</div>
+				<div id="linksNavegacion">
+					<ul>
+						<li class="linkNavegacion" rel="capaysuper">
+							Capacitaciones y supervisiones
+						</li>
+						<li class="linkNavegacion" rel="optimizacion">
+							Programa de optimización institucional
+						</li>
+						<li  class="linkNavegacion" rel="auditoriaycerti">
+							Auditoria y Certificación de Calidad
+						</li>
+						<li  class="linkNavegacion" rel="escalas">
+							Escalas y cuestionarios
+						</li>
+						<li  class="linkNavegacion" rel="desaproy">
+							Desarrollo de proyectos
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div id="cuerpo">
+				<div id="wrapperHerramientas">
+					<div id="dondeEstoy"></div>
+					<div id="herramientas">
+						<div id="wrapperTamanioLetra">
+							<div id="tamanioLetra"></div>
+						</div>
+					</div>
+					<div id="terceraColumna"></div>
+				</div>
+				<h2 id="tituloSeccion">Cursos y Talleres</h2>
+				<div id="cuerpoContenido">
+					<p class="texto">
+						La fundación <strong>ITINERIS</strong>  provee un amplio abanico de servicios para las instituciones
+						interesadas en mejorar su trabajo con personas con distintas (dis)capacidades. Desde soluciones
+						a medida hasta cursos pre armados de introducción y profundización de las herramientas fundamentales
+						para realizar este trabajo.
+					</p>
+				</div>
+			</div>
 			<div id="relacionados">
-				<div id="relacion1"></div>
-				<div id="relacion2"></div>
+				<div id="relacion1">
+					<p>
+						Documentos relacionados con el tema
+					</p>
+					<h4>Ingrese a la biblioteca</h4>
+				</div>
+				<div id="relacion2">
+					<p>
+						Si tenés alguna duda, contactanos
+					</p>
+					<h4>Contacte a Itineris</h4>
+				</div>
 			</div>
 		</div>
-		<div id="footer">
-
-		</div>
+		<div id="footer"></div>
 	</body>
 </html>

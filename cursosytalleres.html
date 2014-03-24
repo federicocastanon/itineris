@@ -14,6 +14,29 @@
 		<link rel="stylesheet" href="css/jqueryuimin.css" type="text/css" media="screen"/>
 		<script type="text/javascript" src="js/basico.js"></script>
 		<script type="text/javascript" src="js/cyt.js"></script>
+		<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+		<style>
+			#lean_overlay {
+				position: fixed;
+				z-index: 100;
+				top: 0px;
+				left: 0px;
+				height: 100%;
+				width: 100%;
+				background: #000;
+				display: none;
+			}
+			.modal_close {
+				position: absolute;
+				top: 12px;
+				right: 12px;
+				display: block;
+				width: 14px;
+				height: 14px;
+				background: url(css/images/modal_close.png);
+				z-index: 2;
+			}
+		</style>
 	</head>
 	<body>
 		<div id="header"></div>

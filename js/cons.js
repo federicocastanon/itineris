@@ -1,12 +1,12 @@
 $(document).ready(function() {
-	
 	var navegacion = {};	
 
-	navegacion["cyt"] = "pages/cyt/cytprincipal.html";
-	navegacion["cytini"] = "pages/cyt/inicial.html";
-	navegacion['cytsupcli'] = "pages/cyt/superclinica.html";
-	navegacion['cytfaciauto'] = "pages/cyt/facilitadores.html";
-	navegacion["cytsensi"] = "pages/cyt/sensibilizacion.html";
+	navegacion["auditoriaycerti"] = "pages/consultoria/auditoriaycerti.html";
+	navegacion["capaysuper"] = "pages/consultoria/capaysuper.html";
+	navegacion['consultoria'] = "pages/consultoria/consultoriaprincipal.html";
+	navegacion['desaproy'] = "pages/consultoria/desaproy.html";
+	navegacion["escalas"] = "pages/consultoria/escalas.html";
+	navegacion["optimizacion"] = "pages/consultoria/optimizacion.html";
 
 	$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
 
@@ -61,7 +61,7 @@ $(document).ready(function() {
 					var altura2 = $("#cuerpo").height() * 1.1;
 					//el cuerpo crece con el contenido, al wrapper hay que hacerlo crecer
 					$("#wrapper").height(altura1 < altura2 ? altura2 : altura1);					
-					$("#suscribir").leanModal({ top : 200, overlay : 0.4, closeButton: ".modal_close" });
+					
 					//$('#cuerpoContenido').html('CAMBIO');
 					
 				});

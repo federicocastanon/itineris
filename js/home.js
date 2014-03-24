@@ -20,7 +20,27 @@ jQuery.fn.animateAuto = function(prop, speed, callback) {
 		}
 
 	});
+};
+function agrandar(objeto) {
+	var elem, valHeight, heightNeg;
+	$(objeto).children('p').each(function(i, el) {
+		el = jQuery(el), elem = el.clone().css({
+			"overflow" : "visible",
+			"height" : "auto",
+			"max-width" : '180px'
+		}).appendTo("body");
+		valHeight = elem.height() * 1.8, heightNeg = elem.height() * 2 / -3, elem.remove();
+
+	});
+	var margin = heightNeg + 'px 2% 0 2%';
+	var padre = $(objeto);
+	$(objeto).animate({
+		height : valHeight + 'px',
+		"margin" : margin
+	}, 1000);
+	$(objeto).children('p').animateAuto("height", 1000);
 }
+
 
 $(document).ready(function() {
 
@@ -40,27 +60,9 @@ $(document).ready(function() {
 
 	$(".agrandable").hover(function() {
 		var elLink = $(this);
-		 timer = setTimeout(function(objeto) {
-        // do your stuff here
-    
-		var elem, valHeight, heightNeg;
-		$(objeto).children('p').each(function(i, el) {
-			el = jQuery(el), elem = el.clone().css({
-				"overflow" : "visible",
-				"height" : "auto",
-				"max-width" : '180px'
-			}).appendTo("body");
-			valHeight = elem.height() * 1.8, heightNeg = elem.height() * 2 / -3, elem.remove();
-
-		});
-		var margin = heightNeg + 'px 2% 0 2%';
-		var padre = $(objeto);
-		$(objeto).animate({
-			height : valHeight + 'px',
-			"margin" : margin
-		}, 1000);
-		$(objeto).children('p').animateAuto("height", 1000);
-	}, delay, elLink);
+		timer = setTimeout(function() {
+			agrandar(elLink);
+		}, delay);
 	}, function() {
 		clearTimeout(timer);
 		$(this).children('p').animate({
