@@ -1,44 +1,52 @@
 jQuery.fn.animateAuto = function(prop, speed, callback) {
-	var elem, height, heightNeg;
-	return this.each(function(i, el) {
-		el = jQuery(el), elem = el.clone().css({
+	var elem, valHeight, maxWidth;
+	return this.each(function(i, el) { el = jQuery(el), maxWidth = el.width() - 37, elem = el.clone().css({
 			"overflow" : "visible",
 			"height" : "auto",
-			"max-width" : '180px'
-		}).appendTo("body");
-		height = elem.css("height"), heightNeg = elem.height() * 1 / -3, elem.remove();
-		var margin = heightNeg + 'px 0 0 0';
-		if (prop == 'both') {
+			"font-size" : "12px",
+			"width" : maxWidth,
+			"font-family" : "acLight"
+		}).appendTo("body"); valHeight = elem.height(), elem.remove();
+		var despl = $(el).height() - valHeight;
+		var margin = despl + 'px 2% 0 2%';
+		if(prop == 'both') {
 			el.animate({
 				"height" : height,
 				"margin" : margin
 			}, speed, callback);
 		} else {
 			el.animate({
-				"height" : height
+				"height" : valHeight
 			}, speed, callback);
 		}
 
 	});
 };
 function agrandar(objeto) {
-	var elem, valHeight, heightNeg;
-	$(objeto).children('p').each(function(i, el) {
-		el = jQuery(el), elem = el.clone().css({
-			"overflow" : "visible",
-			"height" : "auto",
-			"max-width" : '180px'
-		}).appendTo("body");
-		valHeight = elem.height() * 1.8, heightNeg = elem.height() * 2 / -3, elem.remove();
+	if($(objeto).children('p').prop('offsetHeight') < $(objeto).children('p').prop('scrollHeight')  || $(objeto).children('p').prop('offsetWidth') < $(objeto).children('p').prop('scrollWidth')) {
+		// your element have overflow
 
-	});
-	var margin = heightNeg + 'px 2% 0 2%';
-	var padre = $(objeto);
-	$(objeto).animate({
-		height : valHeight + 'px',
-		"margin" : margin
-	}, 1000);
-	$(objeto).children('p').animateAuto("height", 1000);
+		var elem, nuevaAltura, maxWidth, alturaVieja;
+		$(objeto).children('p').each(function(i, el) { el = jQuery(el), maxWidth = el.width() - 37, alturaVieja = el.height() - 24, elem = el.clone().css({
+				"overflow" : "visible",
+				"height" : "auto",
+				"font-size" : "12px",
+				"width" : maxWidth,
+				"font-family" : "acLight",
+				"padding" : "0 29px 0 8px"
+			}).appendTo("body"); nuevaAltura = elem.height(), elem.remove();
+
+		});
+		nuevaAltura = $(objeto).height() + nuevaAltura - alturaVieja;
+		var despl = $(objeto).height() - nuevaAltura;
+		var margin = despl + 'px 2% 0 2%';
+		var padre = $(objeto);
+		$(objeto).animate({
+			height : nuevaAltura + 'px',
+			"margin" : margin
+		}, 1000);
+		$(objeto).children('p').animateAuto("height", 1000);
+	}
 }
 
 
@@ -57,6 +65,7 @@ $(document).ready(function() {
 	});
 	var timer;
 	var delay = 500;
+	
 
 	$(".agrandable").hover(function() {
 		var elLink = $(this);
@@ -65,8 +74,17 @@ $(document).ready(function() {
 		}, delay);
 	}, function() {
 		clearTimeout(timer);
+		var clase = $(this).attr('class');
+		var guardarAltura;
+		if(clase == 'linkHome agrandable'){
+			guardarAltura = '45%';
+		}else{
+			guardarAltura = '65%';
+		}
+		
+		 
 		$(this).children('p').animate({
-			height : '35%'
+			height : guardarAltura
 		}, 1000);
 		$(this).animate({
 			height : '90%',
@@ -74,4 +92,3 @@ $(document).ready(function() {
 		}, 1000);
 	});
 });
-

@@ -48,7 +48,7 @@
 	float: left;
 }
 
-.linkHome{
+.linkHome,.linkHomeST{
 	margin: 1% 2% 0 2%;
 	padding: 0 0 0 5px;
 	min-width : 180px;
@@ -61,7 +61,7 @@
 	position: relative;
 }
 
-.linkHome h3{
+.linkHome h1{
 	font-size: 16px;
 	font-family: acLight;
 	color: #005E84;
@@ -71,12 +71,22 @@
 	font-size:  12px;
 	font-family: acLight;
 	color: #005E84;
-	height: 35%;
+	height: 45%;
 	overflow: hidden;
 	padding: 0 10% 0 3%;
+	cursor: pointer;
+}
+.linkHomeST p{
+	font-size:  12px;
+	font-family: acLight;
+	color: #005E84;
+	height: 65%;
+	overflow: hidden;
+	padding: 0 10% 0 3%;
+	cursor: pointer;
 }
 
-.linkHome div.pie{
+.linkHome div.pie, .linkHomeST div.pie{
 	font-size:  12px;
 	font-family: acLight;
 	color: #8F1F32;	
