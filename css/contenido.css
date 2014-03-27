@@ -1,27 +1,117 @@
+@import url('jqueryuimin.css');
+@import url('style.css');
+
 .titulo {
-	font-family: Verdana, Geneva, sans-serif;
+	font-family: acLight, Geneva, sans-serif;
+	font-style: italic;
 	font-weight: bold;
-	color: #005e84;	
+	font-size: 22px;
+	color: #005e84;
 }
 .titulo strong {
 	color: #005e84;
 }
 .titulomenor {
 	color: #005e84;
+	font-size: 14px;
+	font-family: acLight, Geneva, sans-serif;
 }
 .texto {
-	font-family: Verdana, Geneva, sans-serif;
+	font-family: acLight, Geneva, sans-serif;
 	color: #3B3B3B;
+	font-size: 10px;
 }
 .lista {
-	font-family: Verdana, Geneva, sans-serif;
+	font-family: acLight, Geneva, sans-serif;
 	color: #3B3B3B;
 }
-
 .destacado {
 	font-weight: bold;
 }
 .destacado em {
-	font-family: Verdana, Geneva, sans-serif;
+	font-family: acLight, Geneva, sans-serif;
 	color: #3B3B3B;
 }
+.grande {
+	font-size: 22px;
+}
+.mediano {
+	font-size: 14px;
+}
+#suscripcion {		
+	display: none;
+	background: #FFF;
+	border-radius: 0px;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	box-shadow: 0px 0px 4px rgba(0,0,0,0.7);
+	-webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7);
+	-moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
+}
+#suscripcionContainer {
+	background: #FFF;
+	padding: 2% 3% 2% 3%;	
+}
+.formContacto{
+	margin-top: 4%;
+}
+#suscripcion-header{
+	color: #005e84;
+}
+#suscripcion-header div{
+	font-style: italic;	
+}
+.campoForm{
+	margin: 1% 2% 4% 0;
+	width: 500px;	
+	font-family: acLight;
+	color: #005e84;
+}
+.campoform label{
+	width: 40%;
+	float: right;
+}
+
+.requerido:after{
+	content:'    '  url('images/infomas.png');
+	width: 10px;
+	height: 14px;
+}
+
+.campoForm input{
+	border: 0;
+	border-right: 2px solid #005e84;
+	border-bottom: 2px solid #005e84;
+	float: right;	
+	-moz-box-shadow: inset -1px -1px 1px #000;
+	-webkit-box-shadow: inset -1px -1px 1px #000;
+	box-shadow: inset -1px -1px 1px #000;
+	padding: 0;
+}
+.campoFormTextArea{
+	height: 60px;
+	float: left;
+	border: 1px solid #005e84;	
+}
+.aclaracion{
+	margin: 2% 0 2% 0;	
+	width: 100%;
+	float: left;
+}
+.botones{
+	width: 100%;
+	float: left;
+}
+
+.botonFormulario button {
+	background: url('images/button_suscribirse.png');
+	width: 215px;
+	height: 79px;
+	border: 0;
+	margin-left: 35%;
+	cursor: pointer;
+}
+.botonFormulario button:hover {
+	background: url('images/button_suscribirse_onhover.png');		
+}
+

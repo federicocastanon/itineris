@@ -2,123 +2,39 @@
 	Supervisión clínica cuerpo de texto
 </p>
 <a id="suscribir" href="#suscripcion">SUSCRIBASE</a> 
-<style>
-	#suscripcion {
 
-		width: 404px;
-		padding-bottom: 2px;
-		display: none;
-		background: #FFF;
-		border-radius: 5px;
-		-moz-border-radius: 5px;
-		-webkit-border-radius: 5px;
-		box-shadow: 0px 0px 4px rgba(0,0,0,0.7);
-		-webkit-box-shadow: 0 0 4px rgba(0,0,0,0.7);
-		-moz-box-shadow: 0 0px 4px rgba(0,0,0,0.7);
-	}
-	#signup-header {
-		background: url(css/images/hd-bg.png);
-		padding: 18px 18px 14px 18px;
-		border-bottom: 1px solid #CCC;
-		border-top-left-radius: 5px;
-		-moz-border-radius-topleft: 5px;
-		-webkit-border-top-left-radius: 5px;
-		border-top-right-radius: 5px;
-		-moz-border-radius-topright: 5px;
-		-webkit-border-top-right-radius: 5px;
-	}
-
-	#signup-header  h2 {
-		color: #444;
-		font-size: 2em;
-		font-weight: 700;
-		margin-bottom: 3px;
-		text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
-	}
-	#signup-header  p {
-		color: #444;
-		font-size: 1.3em;
-		margin: 0;
-		text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5);
-		text-shadow: none;
-	}
-
-	#suscripcion .txt-fld {
-		position: relative;
-		width: 364px;
-		padding: 14px 20px;
-		border-bottom: 1px solid #EEE;
-		text-align: right;
-	}
-	#suscripcion .btn-fld {
-		width: 254px;
-		overflow: hidden;
-		padding: 12px 20px 12px 130px;
-	}
-
-	#suscripcion .txt-fld label {
-		display: block;
-		float: left;
-		width: 90px;
-		padding-top: 8px;
-		color: #222;
-		font-size: 1.3em;
-		text-align: left;
-	}
-	#suscripcion .txt-fld input {
-		width: 244px;
-		padding: 8px;
-		border-radius: 4px;
-		-moz-border-radius: 4px;
-		-webkit-border-radius: 4px;
-		font-size: 1.2em;
-		color: #222;
-		background: #F7F7F7;
-		font-family: "Helvetica Neue";
-		outline: none;
-		border-top: 1px solid #CCC;
-		border-left: 1px solid #CCC;
-		border-right: 1px solid #E7E6E6;
-		border-bottom: 1px solid #E7E6E6;
-	}
-	#suscripcion .txt-fld input.good_input {
-		background: #DEF5E1 url(css/images/good.png) 236px center no-repeat;
-	}
-	#suscripcion .txt-fld input.error_input {
-		background: #FDE0E0;
-	}
-
-</style>
-<div id="suscripcion"
-style="display: none; position: fixed; opacity: 1; z-index: 11000; left: 50%; margin-left: -202px; top: 200px;">
-	<div id="signup-ct">
-		<div id="signup-header">
-			<h2>Create a new account</h2>
-			<p>
-				It's simple, and free.
+<div id="suscripcion">
+	<div id="suscripcionContainer">
+		<div id="suscripcion-header">
+			<div class="titulo grande">Inscripción al taller de Supervisión Clínica</div>
+			<p class="mediano">
+				Si tiene alguna duda sobre los cursos dirijase a la sección de contacto
 			</p>
 			<a class="modal_close" href="#"></a>
 		</div>
 
-		<form action="">
+		<form action="" class="formContacto">
 
-			<div class="txt-fld">
-				<label for="">Username</label>
-				<input id="" class="good_input" name="" type="text">
-
+			<div class="campoForm">
+				<label for="" class="requerido">Nombre y Apellido</label>
+				<input id="" type="text">
 			</div>
-			<div class="txt-fld">
-				<label for="">Email address</label>
-				<input id="" name="" type="text">
+			<div class="campoForm">
+				<label for="">Organización</label>
+				<input id="" type="text">
 			</div>
-			<div class="txt-fld">
-				<label for="">Password</label>
-				<input id="" name="" type="text">
-
+			<div class="campoForm">
+				<label for="">Teléfono</label>
+				<input id="" type="text">
 			</div>
-			<div class="btn-fld">
+			<div class="campoForm">
+				<label for="" class="requerido">Correo electrónico</label>
+				<input id="" type="email">
+			</div>
+			
+			<div class="botonFormulario">
 				<button type="submit">
-					Sign Up »
+					
 				</button>
 			</div>
 		</form>

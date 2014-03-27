@@ -1,72 +1,69 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
 	<head>
 		<title>Itineris</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<meta name="description" content="" />
-		<meta name="keywords" content=""/>
-		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
+		<meta name="keywords" content=""/>		
+		<link rel="stylesheet" href="css/contenido.css" type="text/css" media="screen"/>
 		<link rel="shortcut icon" href="css/img/favicon.png">
 		<link rel="icon" type="image/ico" href="css/img/favicon.png">
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
 		<script type="text/javascript" src="js/basico.js"></script>
+		<script type="text/javascript" src="js/jqueryuimin.js"></script>
 	</head>
 	<body>
-		<div id="header">
-
-		</div>
+		<div id="header"></div>
 		<div id="wrapper">
-			<div id="cuerpo">
-				<form name="formu" id="formu" action="index.php?unirse=1&amp;ubi=0&amp;sububi=7" method="post" enctype="multipart/form-data">
-					<div class="formu">
-
-						<div class="frmtxt">
-							<label for="nombre">Nombre y Apellido(*):</label>
+			<div id="cuerpoGrande">
+				<div id="wrapperHerramientas">
+					<div id="dondeEstoy"></div>
+					<div id="herramientas">
+						<div id="wrapperTamanioLetra">
+							<div id="tamanioLetra"></div>
 						</div>
-						<div class="frminp">
-							<input type="text" name="nombre" id="nombre" tabindex="1" value="">
-						</div>
-
-						<div class="frmtxt">
-							<label for="empresa">Empresa o Institución</label>
-						</div>
-						<div class="frminp">
-							<input type="text" name="empresa" id="empresa" tabindex="2" value="">
-						</div>
-						<div class="frmtxt">
-							<label for="telefono">Teléfono</label>
-						</div>
-						<div class="frminp">
-							<input type="text" name="telefono" id="telefono" tabindex="3" value="">
-						</div>
-
-						<div class="frmtxt">
-							<label for="mail">Mail (*):</label>
-						</div>
-						<div class="frminp">
-							<input id="mail" type="text" value="" tabindex="4" name="mail">
-						</div>
-
-						<div class="frmtxt">
-							<label for="consulta">Consultas (*):</label>
-						</div>
-						<div class="frminp">
-							<textarea id="consulta" name="consulta" cols="50" rows="3" tabindex="5"></textarea>
-</div>
-						<div class="botones">
-							<input type="reset" value="Eliminar Datos">
-							&nbsp;
-							<input type="button" value="Enviar" id="manda" name="manda" onclick="javascript:validar();">
-						</div>
-						<div class="frminp" style="font-size: 0.85em;">
-							(*) Campos obligatorios
-						</div>
+					</div>
+					<div id="terceraColumna"></div>
+				</div>
+				<div class="titulo">
+					Contacto
+				</div>
+				<p class="titulomenor" style="max-width: 500px">
+					Si desea recibir información de eventos o contactarse con nosotros por cualquier duda que tenga, por favor llene el siguiente formulario
+					y a la brevedad nos comunicaremos con usted.
+				</p>
+				<form class="formContacto titulomenor" name="formu" id="formu" action="index.php?unirse=1&amp;ubi=0&amp;sububi=7" method="post" enctype="multipart/form-data">
+					<div class="campoForm">
+						<label for="nombre" class="requerido">Nombre y Apellido</label>
+						<input id="nombre" type="text" tabindex="1">
+					</div>
+					<div class="campoForm">
+						<label for="organizacion">Organización</label>
+						<input id="organizacion" type="text" tabindex="2">
+					</div>
+					<div class="campoForm">
+						<label for="telefono">Teléfono</label>
+						<input id="telefono" type="text" tabindex="3">
+					</div>
+					<div class="campoForm">
+						<label for="mail" class="requerido">Correo electrónico</label>
+						<input id="mail" type="email" tabindex="4">
+					</div>
+					<div class="campoForm ">
+						<p class="requerido">Consultas</p>
+						<textarea id="consulta" class="campoFormTextArea" name="consulta" cols="50" rows="3" tabindex="5" ></textarea>
+					</div>
+					<div class="aclaracion">
+						<span class="requerido">Los campos con </span><span> son obligatorios</span>
+					</div>
+					<div class="botones">
+						<input type="reset" value="Eliminar Datos">
+						&nbsp;
+						<input type="button" value="Enviar" id="manda" name="manda" onclick="javascript:validar();">
 					</div>
 				</form>
 			</div>
 		</div>
-		<div id="footer">
-
-		</div>
+		<div id="footer"></div>
 	</body>
 </html>

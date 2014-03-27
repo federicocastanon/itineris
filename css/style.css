@@ -248,23 +248,15 @@ html, body {
 	padding-left: 3%;
 	float: left;
 }
-#cuerpo h2 {
-	font-size: 32px;
-	font-style: italic;
-	font-family: acLight;
-	color: #007AAD;
-	margin: 5px 0 10px 0;
+#cuerpoGrande{
+	min-width: 700px;
+	width: 70%;
+	min-height: 330px;
+	margin: 5px 10px 3px 5px;
+	padding-left: 3%;
+	float: left;
 }
-#cuerpo h3 {
-	font-size: 14px;
-	font-family: acLight;
-	color: #0E80B4;
-	margin: 0 0 5px 0;
-}
-#cuerpo p {
-	font-size: 10px;
-	font-family: Verdana;
-}
+
 #relacionados {
 	width: 18%;
 	height: 90%;

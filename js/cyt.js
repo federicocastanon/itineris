@@ -61,7 +61,7 @@ $(document).ready(function() {
 					var altura2 = $("#cuerpo").height() * 1.1;
 					//el cuerpo crece con el contenido, al wrapper hay que hacerlo crecer
 					$("#wrapper").height(altura1 < altura2 ? altura2 : altura1);					
-					$("#suscribir").leanModal({ top : 200, overlay : 0.4, closeButton: ".modal_close" });
+					$("#suscribir").leanModal({ top : 100, overlay : 0.4, closeButton: ".modal_close" });
 					//$('#cuerpoContenido').html('CAMBIO');
 					
 				});
