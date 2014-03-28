@@ -21,6 +21,16 @@
 	color: #3B3B3B;
 	font-size: 10px;
 }
+.texto a:link, .texto a:visited, .texto a:active {
+	font-family: acLight, Geneva, sans-serif;
+	color: #3B3B3B;	
+	text-decoration:none;
+} 
+.texto a:hover {
+	color: #000000;
+	font-weight:bold;
+	text-decoration:none;
+}
 .lista {
 	font-family: acLight, Geneva, sans-serif;
 	color: #3B3B3B;
