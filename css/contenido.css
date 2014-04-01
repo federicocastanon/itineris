@@ -2,7 +2,7 @@
 @import url('style.css');
 
 .titulo {
-	font-family: acLight, Geneva, sans-serif;
+	font-family: roboto, Geneva, sans-serif;
 	font-style: italic;
 	font-weight: bold;
 	font-size: 22px;
@@ -14,15 +14,15 @@
 .titulomenor {
 	color: #005e84;
 	font-size: 14px;
-	font-family: acLight, Geneva, sans-serif;
+	font-family: roboto, Geneva, sans-serif;
 }
 .texto {
-	font-family: acLight, Geneva, sans-serif;
+	font-family: roboto, Geneva, sans-serif;
 	color: #3B3B3B;
 	font-size: 10px;
 }
 .texto a:link, .texto a:visited, .texto a:active {
-	font-family: acLight, Geneva, sans-serif;
+	font-family: roboto, Geneva, sans-serif;
 	color: #3B3B3B;	
 	text-decoration:none;
 } 
@@ -32,14 +32,14 @@
 	text-decoration:none;
 }
 .lista {
-	font-family: acLight, Geneva, sans-serif;
+	font-family: roboto, Geneva, sans-serif;
 	color: #3B3B3B;
 }
 .destacado {
 	font-weight: bold;
 }
 .destacado em {
-	font-family: acLight, Geneva, sans-serif;
+	font-family: roboto, Geneva, sans-serif;
 	color: #3B3B3B;
 }
 .grande {
@@ -74,7 +74,7 @@
 .campoForm{
 	margin: 1% 2% 4% 0;
 	width: 500px;	
-	font-family: acLight;
+	font-family: roboto;
 	color: #005e84;
 }
 .campoform label{

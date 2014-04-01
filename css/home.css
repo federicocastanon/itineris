@@ -15,7 +15,7 @@
 }
 .imagenPrincipal ul li p {
 	font-size: 16px;
-	font-family: acLight;
+	font-family: roboto;
 	font-style: italic;
 	float: left;
 	text-align: left;
@@ -63,13 +63,13 @@
 
 .linkHome h1{
 	font-size: 16px;
-	font-family: acLight;
+	font-family: roboto;
 	color: #005E84;
 	padding: 0 10% 0 3%;
 }	
 .linkHome p{
 	font-size:  12px;
-	font-family: acLight;
+	font-family: roboto;
 	color: #005E84;
 	height: 45%;
 	overflow: hidden;
@@ -78,7 +78,7 @@
 }
 .linkHomeST p{
 	font-size:  12px;
-	font-family: acLight;
+	font-family: roboto;
 	color: #005E84;
 	height: 65%;
 	overflow: hidden;
@@ -88,7 +88,7 @@
 
 .linkHome div.pie, .linkHomeST div.pie{
 	font-size:  12px;
-	font-family: acLight;
+	font-family: roboto;
 	color: #8F1F32;	
 	font-weight: bold;
 	float: right;

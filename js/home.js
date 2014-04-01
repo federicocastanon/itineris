@@ -23,7 +23,7 @@ jQuery.fn.animateAuto = function(prop, speed, callback) {
 	});
 };
 function agrandar(objeto) {
-	if($(objeto).children('p').prop('offsetHeight') < $(objeto).children('p').prop('scrollHeight')  || $(objeto).children('p').prop('offsetWidth') < $(objeto).children('p').prop('scrollWidth')) {
+	if($(objeto).children('p').prop('offsetHeight') < $(objeto).children('p').prop('scrollHeight') - 2 || $(objeto).children('p').prop('offsetWidth') < $(objeto).children('p').prop('scrollWidth')-2) {
 		// your element have overflow
 
 		var elem, nuevaAltura, maxWidth, alturaVieja;

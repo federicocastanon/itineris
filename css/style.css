@@ -217,7 +217,7 @@ h1,h2,h3,h4{
 	color: #818181;
 	font-size: 16px;
 	font-style: italic;
-	font-family: acLight;
+	font-family: roboto;
 	margin: 0;
 	float: left;
 	width: 100%;
@@ -229,7 +229,7 @@ h1,h2,h3,h4{
 #navegacion #linksNavegacion {
 	background-color: #F9F9F9;
 	font-size: 14px;
-	font-family: acLight;
+	font-family: roboto;
 	margin: 3% 0 0 0;
 	float: left;
 	width: 100%;
@@ -275,7 +275,7 @@ h1,h2,h3,h4{
 }
 #relacionados p {
 	font-size: 14px;
-	font-family: acLight;
+	font-family: roboto;
 	color: #0078AD;
 	padding: 0 3% 0 3%;
 }
