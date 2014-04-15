@@ -6,7 +6,7 @@ $(document).ready(function() {
 			$("#fondoHeader").height($("#header").height() - $("#menu").height() - 1);
 			var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
 			//el 5 es por el padding
-			var altura2 = $("#cuerpo").height() * 1.1 + $("#cuerpoGrande").height() * 1.1;
+			var altura2 = $("#cuerpo").height() * 1.1 + $("#cuerpoGrande").height() * 1.1 + $("#cuerpoDonar").height() * 1.1;
 			//el cuerpo crece con el contenido, al wrapper hay que hacerlo crecer
 			$("#wrapper").height(altura1 < altura2 ? altura2 : altura1);
 			//el 5 es por el padding

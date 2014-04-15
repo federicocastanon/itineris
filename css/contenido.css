@@ -16,7 +16,7 @@
 	font-size: 14px;
 	font-family: roboto, Geneva, sans-serif;
 }
-.texto {
+.texto, .listaD {
 	font-family: roboto, Geneva, sans-serif;
 	color: #3B3B3B;
 	font-size: 10px;
@@ -31,9 +31,13 @@
 	font-weight:bold;
 	text-decoration:none;
 }
-.lista {
+.texto ul, .listaD{
+	list-style-image: url('images/infomas.png');
+}
+
+.lista, .texto ul li {
 	font-family: roboto, Geneva, sans-serif;
-	color: #3B3B3B;
+	color: #3B3B3B;	
 }
 .destacado {
 	font-weight: bold;
@@ -48,6 +52,12 @@
 .mediano {
 	font-size: 14px;
 }
+#pdfCarpeta{
+	display: block;
+	height: 81px;
+	width: 65px;
+	background-image: url('images/pdf_ico.png');
+}
 #suscripcion {		
 	display: none;
 	background: #FFF;
@@ -61,6 +71,7 @@
 #suscripcionContainer {
 	background: #FFF;
 	padding: 2% 3% 2% 3%;	
+	min-width: 530px;
 }
 .formContacto{
 	margin-top: 4%;
@@ -112,6 +123,18 @@
 	width: 100%;
 	float: left;
 }
+#suscribir{
+	background: url('images/button_suscribirse.png');
+	width: 215px;
+	height: 79px;
+	border: 0;
+	margin-left: 35%;
+	cursor: pointer;
+	display: block;
+}
+#suscribir:hover{
+	background: url('images/button_suscribirse_onhover.png');
+}
 
 .botonFormulario button {
 	background: url('images/button_suscribirse.png');
@@ -124,4 +147,54 @@
 .botonFormulario button:hover {
 	background: url('images/button_suscribirse_onhover.png');		
 }
-
+#wrapAutoGestorEdificio{
+	width: 100%;
+	min-height: 202px;
+}
+#autogestor{
+	background: url('images/autogestor.png') no-repeat;
+	padding-left: 115px;
+	min-height: 162px;
+	float: left;
+	width: 20%;
+	margin-right: 10px;
+}
+#edificios{
+	background: url('images/edificios.png') no-repeat;
+	padding-left: 210px;
+	min-height: 128px;
+	float: left;
+	width: 20%;
+}
+#wrapSenDvdRev{
+	width: 100%;
+	min-height: 80px;
+}
+#senialadores{
+	background: url('images/senialadores.png') no-repeat;
+	padding-left: 54px;
+	min-height: 76px;
+	float: left;
+	width: 20%;
+	margin-right: 10px;
+}
+#dvds{
+	background: url('images/dvd.png') no-repeat;
+	padding-left: 68px;
+	min-height: 71px;
+	float: left;
+	width: 20%;
+	margin-right: 10px;
+}
+#revistanc{
+	background: url('images/revista.png') no-repeat;
+	padding-left: 65px;
+	min-height: 80px;
+	float: left;
+	width: 20%;
+}
+.fecha{
+	font-family: roboto, Geneva, sans-serif;
+	color: #3B3B3B;
+	font-size: 10px;
+}

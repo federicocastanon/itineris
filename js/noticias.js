@@ -32,5 +32,39 @@ $(document).ready(function() {
 			$("#wrapper").height(altura1 < altura2 ? altura2 : altura1);
 		}
 	});
+	navegacion["pedro"] = "pedro.html";
+	navegacion["pff"] = "programaFormacion.html";
+	navegacion['congRosa'] = "congresoRosario.html";
+	
+	
+	$('#linksNavegacion > ul > .linkNavegacion').each(function(index) {
+		$(this).click(function() {
+
+			var linkS = $('.linkSeleccionado');
+
+			$(linkS).removeClass("linkSeleccionado");
+			$(this).addClass("linkSeleccionado");
+			linkS = this;
+
+			$('#cuerpoNoticia').fadeOut('slow', function() {				
+				
+				$.get(navegacion[$(linkS).attr("rel")], function(msg) {
+					$('#cuerpoNoticia').html($(msg).find('#cuerpoNoticia').html());
+					$('#cuerpoNoticia').fadeIn('slow');
+					//tomar tamaÃ±o letra elegido
+					
+					var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
+					//el 5 es por el padding
+					var altura2 = $("#cuerpo").height() * 1.1;
+					//el cuerpo crece con el contenido, al wrapper hay que hacerlo crecer
+					$("#wrapper").height(altura1 < altura2 ? altura2 : altura1);					
+					
+					
+					
+				});
+				
+			});
+		});
+	});
 
 });
