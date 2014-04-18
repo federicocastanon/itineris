@@ -38,6 +38,14 @@ html, body {
 	width: 76%;
 	margin: auto;
 }
+#wrapperDonar {
+	background-color: #FFFFFF;
+	background-size: auto 100%;
+	padding-top: 0.25em;
+	min-width: 960px;
+	width: 90%;
+	margin: auto;
+}
 
 #footer {
 	background-color: #005E84;
@@ -45,14 +53,16 @@ html, body {
 	width: 100%;
 	min-height: 72px;
 	height: 21%;
+	font-family: roboto;
 }
-h1,h2,h3,h4{
+h1, h2, h3, h4 {
 	margin: 0;
 }
 
 #menu {
 	position: absolute;
-	font-family: Georgia;
+	font-family: roboto;
+	font-weight: bold;
 	font-size: 12px;
 	border-top: 2px solid #CCCCCC;
 	border-bottom: 1px solid #E3E3E3;
@@ -77,7 +87,7 @@ h1,h2,h3,h4{
 	border: 0px;
 }
 .itemmenu a:link, .itemmenu a:visited, .itemmenu a {
-	color: #21277D;
+	color: #005E84;
 	text-decoration: none;
 	float: left;
 	overflow: hidden;
@@ -111,7 +121,7 @@ h1,h2,h3,h4{
 }
 .copyright {
 	color: #FFFFFF;
-	font-family: Georgia;
+	font-family: roboto;
 	text-align: center;
 	font-size: 8px;
 	float: right;
@@ -135,27 +145,27 @@ h1,h2,h3,h4{
 }
 .linkFoot {
 	color: #FFFFFF;
-	font-family: Georgia;
+	font-family: roboto;
 	font-size: 10px;
 	float: left;
 	padding: 0 5% 0 2em;
-	border-right: inset #4D4D4D 1px;
+	border-right: inset #FFFFFF 1px;
 	width: 35%;
 }
 .linkFootUlt {
 	color: #FFFFFF;
-	font-family: Georgia;
+	font-family: roboto;
 	float: left;
 	padding: 0 1em 0 2em;
 	border-right: inset #4D4D4D 0px;
 	width: 45%;
 }
 .linkFoot li, .linkFootUlt li {
-	font-size: 10px;
+	font-size: 11px;
 	padding-top: 5px;
 }
 .linkFoot h1, .linkFootUlt h1 {
-	font-size: 12px;
+	font-size: 13px;
 	margin: 0;
 }
 .linkFoot h2, .linkFootUlt h2 {
@@ -208,19 +218,20 @@ h1,h2,h3,h4{
 }
 #navegacion {
 	float: left;
-	min-height: 330px;
 	width: 25%;
 	background-color: #F9F9F9;
+	margin-top: 20px;
 }
 #navegacion #titulo {
 	background-color: #F2F2F2;
 	color: #818181;
 	font-size: 16px;
 	font-style: italic;
-	font-family: roboto;
+	font-family: acLight;
 	margin: 0;
+	margin-left: 2%;
 	float: left;
-	width: 100%;
+	width: 98%;
 	cursor: pointer;
 }
 #navegacion ul {
@@ -253,7 +264,7 @@ h1,h2,h3,h4{
 	padding-left: 3%;
 	float: left;
 }
-#cuerpoGrande{
+#cuerpoGrande {
 	min-width: 650px;
 	width: 70%;
 	min-height: 330px;
@@ -261,24 +272,26 @@ h1,h2,h3,h4{
 	padding-left: 3%;
 	float: left;
 }
-#cuerpoDonar{
+#cuerpoDonar {
 	min-width: 650px;
-	width: 70%;
+	width: 72%;
 	min-height: 330px;
-	margin: 5px 10px 3px 5px;
-	padding-left: 3%;
+	margin: 5px 10px 3px 0px;
+	padding-left: 1%;
 	float: left;
 }
 #relacionados {
 	width: 18%;
 	height: 90%;
 	float: right;
+	margin-top: 10px;
 }
 #relacionados div {
 	background-color: #F7F5CF;
 	height: 40%;
 	margin-bottom: 4%;
 	padding: 5px 5px 3px 3px;
+	max-height: 180px;
 }
 #relacionados p {
 	font-size: 14px;
@@ -295,54 +308,145 @@ h1,h2,h3,h4{
 #enlacesPermanentes {
 	height: 56px;
 	float: right;
-	margin-top: 1%;
+	margin-top: 2%;
 	margin-right: 12%;
-	width: 340px;
+	width: 380px;
 }
 
 #enlacesPermanentes div {
-	height: 30px;
+	height: 44px;
+	width: 56px;
 	cursor: pointer;
 	float: right;
 	margin-left: 5%;
 	padding-right: 5%;
 }
 #enlacesPermanentes div a {
-	height: 30px;
-	width: 50px;
+	height: 44px;
+	width: 56px;
 	display: block;
 }
-#correo {
-	width: 42px;
+#correo, #cursosVirtuales, #facebook {
 	border-right: solid 1px #EBEBEB;
-	background: url(images/correo.png) no-repeat;
 }
-#correo:hover {
-	background: url(images/correo-onhover.png) no-repeat;
+#correo a {
+	background: url('images/tira_botonera.png') 0 0;
 }
-#cursosVirtuales {
-	width: 43px;
-	border-right: solid 1px #EBEBEB;
-	background: url(images/cursos_virtuales.png) no-repeat;
+#correo a:hover {
+	background: url('images/tira_botonera.png') 0 -44px;
 }
-#cursosVirtuales:hover {
-	background: url(images/cursos_virtuales-onhover.png) no-repeat;
+#cursosVirtuales a {
+	background: url(images/tira_botonera.png) -56px 0 no-repeat;
 }
-#facebook {
-	width: 36px;
-	border-right: solid 1px #EBEBEB;
-	background: url(images/fb.png) no-repeat;
+#cursosVirtuales a:hover {
+	background: url(images/tira_botonera.png) -56px -44px no-repeat;
 }
-#facebook:hover {
-	background: url(images/fb-onhover.png) no-repeat;
+#facebook a {
+	background: url(images/tira_botonera.png) -112px 0 no-repeat;
 }
-#biblioteca {
-	width: 44px;
-	background: url(images/biblioteca.png) no-repeat;
+#facebook a:hover {
+	background: url(images/tira_botonera.png) -112px -44px no-repeat;
 }
-#biblioteca:hover {
-	background: url(images/biblioteca-onhover.png) no-repeat;
+#biblioteca a {
+	background: url(images/tira_botonera.png) -168px 0 no-repeat;
+}
+#biblioteca a:hover {
+	background: url(images/tira_botonera.png) -168px -44px no-repeat;
 }
 
 /*Contenido*/
-
+/*Contacto*/
+.btnEliminar {
+	-moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+	box-shadow: inset 0px 1px 0px 0px #ffffff;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e5e5e5), color-stop(1, #dfdfdf) );
+	background: -moz-linear-gradient( center top, #e5e5e5 5%, #dfdfdf 100% );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e5e5', endColorstr='#dfdfdf');
+	background-color: #e5e5e5;
+	-webkit-border-top-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-left-radius: 5px;
+	text-indent: 0;
+	border: 1px solid #dcdcdc;
+	display: inline-block;
+	color: #005f84;
+	font-family: roboto;
+	font-size: 13px;
+	font-weight: bold;
+	font-style: normal;
+	height: 25px;
+	line-height: 25px;
+	width: 107px;
+	text-decoration: none;
+	text-align: center;
+	text-shadow: 1px 1px 0px #ffffff;
+	cursor: pointer;
+}
+.btnEliminar :hover {
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #e5e5e5) );
+	background: -moz-linear-gradient( center top, #dfdfdf 5%, #e5e5e5 100% );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#e5e5e5');
+	background-color: #dfdfdf;
+	cursor: pointer;
+}
+.btnEliminar :active {
+	position: relative;
+	top: 1px;
+}
+.btnEnviar {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e5e5e5), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #e5e5e5 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e5e5', endColorstr='#dfdfdf');
+	background-color:#e5e5e5;
+	-webkit-border-top-left-radius:5px;
+	-moz-border-radius-topleft:5px;
+	border-top-left-radius:5px;
+	-webkit-border-top-right-radius:5px;
+	-moz-border-radius-topright:5px;
+	border-top-right-radius:5px;
+	-webkit-border-bottom-right-radius:5px;
+	-moz-border-radius-bottomright:5px;
+	border-bottom-right-radius:5px;
+	-webkit-border-bottom-left-radius:5px;
+	-moz-border-radius-bottomleft:5px;
+	border-bottom-left-radius:5px;
+	text-indent:0;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#005f84;
+	font-family:roboto;
+	font-size:13px;
+	font-weight:bold;
+	font-style:normal;
+	height:25px;
+	line-height:25px;
+	width:70px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #ffffff;
+	cursor: pointer;
+}
+.btnEnviar:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #e5e5e5) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #e5e5e5 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#e5e5e5');
+	background-color:#dfdfdf;
+	cursor: pointer;
+}.btnEnviar:active {
+	position:relative;
+	top:1px;
+}
+/*contacto FIN*/

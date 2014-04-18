@@ -9,6 +9,7 @@ $(document).ready(function() {
 	navegacion["cytsensi"] = "pages/cyt/sensibilizacion.html";
 
 	$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
+	$('.listaD > li').css("font-size", $('#tamanioLetra').slider("option", "value"));
 
 	$('#titulo').click(function() {
 
@@ -26,6 +27,7 @@ $(document).ready(function() {
 					$('#cuerpo').fadeIn('slow');
 					//tomar tamaño letra elegido
 					$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
+					$('.listaD > li').css("font-size", $('#tamanioLetra').slider("option", "value"));
 					var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
 					//el 5 es por el padding
 					var altura2 = $("#cuerpo").height() * 1.1;
@@ -56,6 +58,7 @@ $(document).ready(function() {
 					$('#cuerpo').fadeIn('slow');
 					//tomar tamaño letra elegido
 					$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
+					$('.listaD > li').css("font-size", $('#tamanioLetra').slider("option", "value"));
 					var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
 					//el 5 es por el padding
 					var altura2 = $("#cuerpo").height() * 1.1;
