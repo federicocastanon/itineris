@@ -10,7 +10,7 @@ $(document).ready(function() {
 	$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
 	var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
 	//el 5 es por el padding
-	var altura2 = $("#cuerpo").height() * 1.1;
+	var altura2 = $("#cuerpoGrande").height() * 1.1;
 	//el cuerpo crece con el contenido, al wrapper hay que hacerlo crecer
 	$("#wrapper").height(altura1 < altura2 ? altura2 : altura1);
 
@@ -22,17 +22,17 @@ $(document).ready(function() {
 		$(this).addClass("linkSeleccionado");
 		linkS = this;
 
-		$('#cuerpo').fadeOut('slow', function() {
-			$('#cuerpo > #tituloSeccion').html($(linkS).html());
+		$('#cuerpoGrande').fadeOut('slow', function() {
+			$('#cuerpoGrande > #tituloSeccion').html($(linkS).html());
 
 			$.get(navegacion[$(linkS).attr("rel")], function(msg) {
 				$('#cuerpoContenido').html(msg);
-				$('#cuerpo').fadeIn('slow');
+				$('#cuerpoGrande').fadeIn('slow');
 				//tomar tamaño letra elegido
 				$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
 				var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
 				//el 5 es por el padding
-				var altura2 = $("#cuerpo").height() * 1.1;
+				var altura2 = $("#cuerpoGrande").height() * 1.1;
 				//el cuerpo crece con el contenido, al wrapper hay que hacerlo crecer
 				$("#wrapper").height(altura1 < altura2 ? altura2 : altura1);
 
@@ -51,18 +51,24 @@ $(document).ready(function() {
 			$(linkS).removeClass("linkSeleccionado");
 			$(this).addClass("linkSeleccionado");
 			linkS = this;
+			var nombreLink = $(linkS).attr("rel");
+			if(nombreLink == 'estructura'){
+				$('#cuerpoGrande').css({"min-width": "850px"});
+			}else{
+				$('#cuerpoGrande').css({"min-width": "650px"});				
+			}
 
-			$('#cuerpo').fadeOut('slow', function() {
-				$('#cuerpo > #tituloSeccion').html($(linkS).html());
+			$('#cuerpoGrande').fadeOut('slow', function() {
+				$('#cuerpoGrande > #tituloSeccion').html($(linkS).html());
 
 				$.get(navegacion[$(linkS).attr("rel")], function(msg) {
 					$('#cuerpoContenido').html(msg);
-					$('#cuerpo').fadeIn('slow');
+					$('#cuerpoGrande').fadeIn('slow');
 					//tomar tamaño letra elegido
 					$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
 					var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
 					//el 5 es por el padding
-					var altura2 = $("#cuerpo").height() * 1.1;
+					var altura2 = $("#cuerpoGrande").height() * 1.1;
 					//el cuerpo crece con el contenido, al wrapper hay que hacerlo crecer
 					$("#wrapper").height(altura1 < altura2 ? altura2 : altura1);
 
