@@ -1,7 +1,7 @@
 $(document).ready(function() {
-	$.get("../../header.html", function(msg) {
+	$.get("header.html", function(msg) {
 		$('#header').html(msg);
-		$.get("../../footer.html", function(footCont) {
+		$.get("footer.html", function(footCont) {
 			$('#footer').html(footCont);
 			$("#fondoHeader").height($("#header").height() - $("#menu").height() - 1);
 			var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
@@ -11,7 +11,7 @@ $(document).ready(function() {
 			$("#wrapper").height(altura1 < altura2 ? altura2 : altura1);
 			//el 5 es por el padding
 			$('#logo').click(function() {
-				window.location.href = "/itineris/home.html";
+				window.location.href = "home.html";
 			});
 		});
 
@@ -31,10 +31,11 @@ $(document).ready(function() {
 			//el cuerpo crece con el contenido, al wrapper hay que hacerlo crecer
 			$("#wrapper").height(altura1 < altura2 ? altura2 : altura1);
 		}
-	});
-	navegacion["pedro"] = "pedro.html";
-	navegacion["pff"] = "programaFormacion.html";
-	navegacion['congRosa'] = "congresoRosario.html";
+	});	
+	
+	var a = window.location.toString();
+	var name = a.substring(a.indexOf("=")+1);
+	cargarCuerpo(name);
 	
 	
 	$('#linksNavegacion > ul > .linkNavegacion').each(function(index) {
@@ -45,11 +46,22 @@ $(document).ready(function() {
 			$(linkS).removeClass("linkSeleccionado");
 			$(this).addClass("linkSeleccionado");
 			linkS = this;
-
-			$('#cuerpoNoticia').fadeOut('slow', function() {				
+			cargarCuerpo($(linkS).attr("rel"));							
 				
-				$.get(navegacion[$(linkS).attr("rel")], function(msg) {
-					$('#cuerpoNoticia').html($(msg).find('#cuerpoNoticia').html());
+		});
+	});
+
+});
+
+var navegacion = {};
+navegacion["pedro"] = "pages/noticias/pedro.html";
+navegacion["pff"] = "pages/noticias/programaFormacion.html";
+navegacion['congRosa'] = "pages/noticias/congresoRosario.html";
+
+function cargarCuerpo(nombre){
+	$('#cuerpoNoticia').fadeOut('slow', function() {
+	$.get(navegacion[nombre], function(msg) {
+					$('#cuerpoNoticia').html(msg);
 					$('#cuerpoNoticia').fadeIn('slow');
 					//tomar tamaÃ±o letra elegido
 					
@@ -62,9 +74,5 @@ $(document).ready(function() {
 					
 					
 				});
-				
-			});
 		});
-	});
-
-});
+}

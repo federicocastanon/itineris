@@ -8,13 +8,30 @@
 		<link rel="stylesheet" href="css/contenido.css" type="text/css" media="screen"/>
 		<link rel="shortcut icon" type="image/ico" href="css/img/favicon.png">
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-		<script type="text/javascript" src="js/jqueryuimin.js"></script>
-		<script type="text/javascript" src="js/basico.js"></script>
-		<script type="text/javascript" src="js/cyt.js"></script>
+		<script type="text/javascript" src="js/jqueryuimin.js"></script>		
+		<script type="text/javascript" src="js/noticias.js"></script>
 	</head>
 	<body>
 		<div id="header"></div>
 		<div id="wrapper">
+			<div id="navegacion">
+				<div id="titulo">
+					Noticias
+				</div>
+				<div id="linksNavegacion">
+					<ul>
+						<li class="linkNavegacion" rel="pedro">
+							Pedro Aznar apadrina a los autogestores
+						</li>
+						<li class="linkNavegacion" rel="pff">
+							Programa de Formación de Facilitadores
+						</li>
+						<li  class="linkNavegacion" rel="congRosa">
+							Congreso Internacional de Rosario 2014
+						</li>						
+					</ul>
+				</div>
+			</div>
 			<div id="cuerpo">
 				<div id="wrapperHerramientas">
 					<div id="dondeEstoy"></div>
@@ -25,15 +42,7 @@
 					</div>
 					<div id="terceraColumna"></div>
 				</div>
-				<h1 id="tituloSeccion" class="titulo">NOTICIAS</h1>
-				<div id="cuerpoContenido">
-					<p class="texto">
-						<a href="pages/noticias/pedro.html">Pedro Aznar Apadrina Autogestores</a>
-					</p>
-					<p class="texto">
-						<a href="pages/noticias/programaFormacion.html">Programa de FormaciÃ³n de Autogestores</a>
-					</p>
-				</div>
+				<div id="cuerpoNoticia"></div>
 			</div>
 			<div id="relacionados">
 				<div id="relacion1">
@@ -44,7 +53,7 @@
 				</div>
 				<div id="relacion2">
 					<p>
-						Si tenÃ©s alguna duda, contactanos
+						Si tenés alguna duda, contactanos
 					</p>
 					<h4>Contacte a Itineris</h4>
 				</div>
