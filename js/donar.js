@@ -25,7 +25,7 @@ $(document).ready(function() {
 	navegacion["donarcorto"] = "pages/donar/donarCorto.html";
 	navegacion["donarlargo"] = "pages/donar/donarLargo.html";
 
-	$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
+	
 
 $('#tamanioLetra').slider({
 		min : 11,
@@ -42,6 +42,7 @@ $('#tamanioLetra').slider({
 			$("#wrapperDonar").height(altura1 < altura2 ? altura2 : altura1);
 		}
 	});
+	$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
 
 	$('#titulo').click(function() {
 
