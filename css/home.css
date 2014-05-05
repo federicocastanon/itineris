@@ -26,19 +26,19 @@
 	width: 33%;
 }
 #diapo1 {
-	background: #A9CDDD url(images/banner-slim1.png) no-repeat right top;
+	background: #0078ad url(images/banner-slim1.jpg) no-repeat right top;
 	background-size: contain;
 }
 #diapo2 {
-	background: #A9CDDD url(images/banner-slim2.png) no-repeat right top;
+	background: #0078ad url(images/banner-slim2.jpg) no-repeat right top;
 	background-size: contain;
 }
 #diapo3 {
-	background: #A9CDDD url(images/banner-slim3.png) no-repeat right top;
+	background: #0078ad url(images/banner-slim3.jpg) no-repeat right top;
 	background-size: contain;
 }
 #diapo4 {
-	background: #A9CDDD url(images/banner-slim4.png) no-repeat right top;
+	background: #0078ad url(images/banner-slim4.jpg) no-repeat right top;
 	background-size: contain;
 }
 
@@ -64,15 +64,15 @@
 
 .linkHome h1{
 	font-size: 16px;
-	font-family: roboto;
-	color: #005E84;
-	padding: 0 10% 0 3%;
+	font-family: acLight;
+	color: #0078ad;
+	padding: 4% 10% 0 3%;
 	font-weight: bold;
 }	
 .linkHome p{
 	font-size:  12px;
 	font-family: roboto;
-	color: #005E84;
+	color: #0078ad;
 	height: 45%;
 	overflow: hidden;
 	padding: 0 10% 0 3%;
@@ -81,7 +81,7 @@
 .linkHomeST p{
 	font-size:  12px;
 	font-family: roboto;
-	color: #005E84;
+	color: #0078ad;
 	height: 65%;
 	overflow: hidden;
 	padding: 0 10% 0 3%;

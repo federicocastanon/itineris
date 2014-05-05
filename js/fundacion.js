@@ -52,18 +52,30 @@ $(document).ready(function() {
 			$(this).addClass("linkSeleccionado");
 			linkS = this;
 			var nombreLink = $(linkS).attr("rel");
-			if(nombreLink == 'estructura'){
-				$('#cuerpoGrande').css({"min-width": "850px"});
-			}else{
-				$('#cuerpoGrande').css({"min-width": "650px"});				
-			}
 
-			$('#cuerpoGrande').fadeOut('slow', function() {
+			$('#wrapper').fadeOut('slow', function() {
 				$('#cuerpoGrande > #tituloSeccion').html($(linkS).html());
 
 				$.get(navegacion[$(linkS).attr("rel")], function(msg) {
 					$('#cuerpoContenido').html(msg);
-					$('#cuerpoGrande').fadeIn('slow');
+
+					if (nombreLink == 'estructura') {
+						$('#cuerpoGrande').css({
+							"min-width" : "850px"
+						});
+						$('#wrapper').css({
+							"min-width" : "1260px"
+						});
+					} else {
+						$('#cuerpoGrande').css({
+							"min-width" : "650px"
+						});
+						$('#wrapper').css({
+							"min-width" : "960px"
+						});
+					}
+
+					$('#wrapper').fadeIn('slow');
 					//tomar tamaño letra elegido
 					$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
 					var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;

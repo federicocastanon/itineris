@@ -6,13 +6,13 @@
 	font-style: italic;
 	font-weight: bold;
 	font-size: 22px;
-	color: #005e84;
+	color: #0078ad;
 }
 .titulo strong {
-	color: #005e84;
+	color: #0078ad;
 }
 .titulomenor {
-	color: #005e84;
+	color: #0078ad;
 	font-size: 14px;
 	font-family: roboto;
 }
@@ -77,7 +77,7 @@
 	margin-top: 4%;
 }
 #suscripcion-header{
-	color: #005e84;
+	color: #0078ad;
 }
 #suscripcion-header div{
 	font-style: italic;	
@@ -86,7 +86,7 @@
 	margin: 1% 2% 4% 0;
 	max-width: 300px;	
 	font-family: roboto;
-	color: #005e84;
+	color: #0078ad;
 }
 .campoform label{
 	width: 40%;
@@ -101,15 +101,15 @@
 
 .campoForm input{
 	border: 0;
-	border-right: 1px solid #005e84;
-	border-bottom: 1px solid #005e84;
+	border-right: 1px solid #0078ad;
+	border-bottom: 1px solid #0078ad;
 	float: right;	
 	padding: 0;
 }
 .campoFormTextArea{
 	height: 60px;
 	float: left;
-	border: 1px solid #005e84;	
+	border: 1px solid #0078ad;	
 }
 .aclaracion{
 	margin: 2% 0 2% 0;	

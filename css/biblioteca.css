@@ -23,11 +23,14 @@
 	margin-top: 170px;
 }
 
-.bk-info h3 {
+.bk-info h1 {
 	padding: 25px 0 10px;
 	margin-bottom: 20px;
 	border-bottom: 1px solid rgba(0,0,0,0.3);
-	font-size: 26px;
+	font-size: 20px;
+	font-family: acLight;
+	font-style: italic;
+	color: #0078AD;
 }
 /*
  .bk-info h3 span:first-child {
@@ -40,15 +43,19 @@
  }*/
 
 .bk-info p {
-	line-height: 24px;
-	color: #444;
+	line-height: 20px;
+	font-size: 12px;
+	font-family: roboto;
+	font-style: italic;
+	color: #0078AD;
 	min-height: 160px;
 }
 
 .bk-info button {
-	background: #FC756F;
+	background: #F9F9F9;
 	border: none;
-	color: #fff;
+	font-family: roboto;
+	color: #818181;
 	display: inline-block;
 	padding: 3px 15px;
 	font-weight: 700;
@@ -64,7 +71,8 @@
 }
 
 .no-touch .bk-info button:hover, .bk-info button.bk-active {
-	background: #d0544e;
+	background: #0078AD;
+	color: #FFFFFF;
 }
 
 .bk-list li .bk-book {
@@ -258,9 +266,10 @@
 	right: 10px;
 }
 
-.bk-left h2 {
+.bk-left h1 {
 	width: 140px;
 	height: 40px;
+	font-family: acLight;
 	-webkit-transform-origin: 0 0;
 	-moz-transform-origin: 0 0;
 	transform-origin: 0 0;
@@ -543,14 +552,15 @@
 
 /*Otros documentos*/
 .documento {
-	margin: 20px 10px 5px 15px;
+	margin: 20px 10px 35px 15px;
 	width: 95%;
 	min-height: 110px;
 }
 .tituloDocumento {
 	font-size: 14px;
+	font-family: acLight;
 	font-style: italic;
-	color: #21277D;
+	color: #0078ad;
 	border-bottom: solid 1px #1C94C4;
 	margin: 0 0 10px 0;
 }
@@ -564,14 +574,16 @@
 }
 .descripcionDocumento {
 	font-size: 11px;
+	font-family: roboto;
 	font-style: italic;
 	color: #3B3B3B;
 	float: left;
 	max-width: 70%;
 }
 .descargaDocumento {
-	font-size: 10px;	
-	color: #3B3B3B;
+	font-size: 10px;
+	color: #871C2C;
+	font-family: roboto;
 	float: right;
 	text-align: right;
 	width: 100%;

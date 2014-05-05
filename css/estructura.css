@@ -151,15 +151,15 @@ a:hover{
 	width:300px;
 	height:200px;
 	border-right:7px solid #f0f0f0;
-	padding:20px;
+	padding: 0px 5px 0px 10px;
 	left:209px;
 	top:0px;
 	background:#fff;
 }
-.ei_descr h2{
+.ei_descr h1{
 	font-family: roboto;
 	font-size:26px;
-	color:#21277D;
+	color:#0078ad;
 	padding:10px 5px 5px 6px;
 	text-shadow:0px 0px 1px #fff;
 	background:#fff ;
@@ -173,15 +173,17 @@ a:hover{
 	background:#333;
 }
 .ei_descr p{
-	color:#21277D;
+	color:#0078ad;
 	padding:0px 5px 0px 5px;
 	line-height:18px;
 	font-size:11px;
-	font-family: Arial;
+	font-family: roboto;
+	font-style:  italic;
 	text-transform:uppercase;
 }
 .ei_descr .cv{
 	background: transparent url(images/cv.png) no-repeat top left;
+	background-size: contain;
 	height: 32px;
 	width: 32px;
 	cursor: pointer;

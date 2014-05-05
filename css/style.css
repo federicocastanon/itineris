@@ -87,7 +87,7 @@ h1, h2, h3, h4 {
 	border: 0px;
 }
 .itemmenu a:link, .itemmenu a:visited, .itemmenu a {
-	color: #005E84;
+	color: #0078ad;
 	text-decoration: none;
 	float: left;
 	overflow: hidden;
@@ -132,8 +132,11 @@ h1, h2, h3, h4 {
 	color: #FFFFFF;
 	font-family: Georgia;
 	float: right;
-	margin-top: 1%;
+	margin: 2% 0.8% 0px 0px;	
 	cursor: pointer;
+}
+.redes ul li img{
+	height: 20px;
 }
 .containerLinkFoot {
 	margin-left: 10%;
