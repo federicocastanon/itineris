@@ -55,6 +55,9 @@ function agrandar(objeto) {
 
 
 $(document).ready(function() {
+	$.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff'},
+	message: '<h1><img src="css/images/busy.gif" /> Un momento por favor...</h1>'  });
+	
 	$.get("header.html", function(msg) {
 		$('#header').html(msg);
 		$.get("footer.html", function(footCont) {
@@ -82,7 +85,10 @@ $(document).ready(function() {
 			});
 			var timer;
 			var delay = 500;
-
+			
+			//setTimeout($.unblockUI, 2000);
+			$.unblockUI();
+			
 			$(".agrandable").hover(function() {
 				var elLink = $(this);
 				timer = setTimeout(function() {

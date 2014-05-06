@@ -62,7 +62,7 @@ function cargarCuerpo(nombre){
 	$('#cuerpoNoticia').fadeOut('slow', function() {
 	$.get(navegacion[nombre], function(msg) {
 					$('#cuerpoNoticia').html(msg);
-					$('#cuerpoNoticia').fadeIn('slow');
+					
 					//tomar tamaÃ±o letra elegido
 					
 					var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
@@ -70,7 +70,7 @@ function cargarCuerpo(nombre){
 					var altura2 = $("#cuerpo").height() * 1.1;
 					//el cuerpo crece con el contenido, al wrapper hay que hacerlo crecer
 					$("#wrapper").height(altura1 < altura2 ? altura2 : altura1);					
-					
+					$('#cuerpoNoticia').fadeIn('slow');
 					
 					
 				});
