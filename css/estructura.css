@@ -116,6 +116,10 @@ a:hover{
 	background-position:-279px 0px;
 	z-index: 11;
 }
+.pos11 .ei_preview{
+	background-position:-310px 0px;
+	z-index: 11;
+}
 .pos1 .ei_image{
 	background-position:0px 0px;
 }
@@ -145,6 +149,9 @@ a:hover{
 }
 .pos10 .ei_image{
 	background-position:-1602px 0px;
+}
+.pos11 .ei_image{
+	background-position:-1780px 0px;
 }
 .ei_descr{
 	position:absolute;

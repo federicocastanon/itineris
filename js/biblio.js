@@ -1,5 +1,6 @@
 $(document).ready(function() {
-
+$.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: '30%'},
+		message: '<img src="css/images/loading.gif" /> '  });
 	$('#cuerpoGrande').css({
 		"min-width" : "850px"
 	});
@@ -60,7 +61,7 @@ $(document).ready(function() {
 			$(this).addClass("linkSeleccionado");
 			linkS = this;
 
-			$('#wrapper').fadeOut('slow', function() {
+			$('#cuerpoGrande').fadeOut('slow', function() {
 				$('#cuerpoGrande > #tituloSeccion').html($(linkS).html());
 
 				$.get(navegacion[$(linkS).attr("rel")], function(msg) {
@@ -88,7 +89,7 @@ $(document).ready(function() {
 					$('.listaD > li').css("font-size", $('#tamanioLetra').slider("option", "value"));
 					var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
 					//el 5 es por el padding
-					$('#wrapper').fadeIn('slow', function() {
+					$('#cuerpoGrande').fadeIn('slow', function() {
 
 					});
 					var altura2 = $("#cuerpoGrande").height() * 1.1;
@@ -101,6 +102,7 @@ $(document).ready(function() {
 			});
 		});
 	});
+	$.unblockUI();
 });
 var Books = (function() {
 

@@ -55,8 +55,8 @@ function agrandar(objeto) {
 
 
 $(document).ready(function() {
-	$.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff'},
-	message: '<h1><img src="css/images/busy.gif" /> Un momento por favor...</h1>'  });
+	$.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: '30%'},
+	message: '<img src="css/images/loading.gif" /> '  });
 	
 	$.get("header.html", function(msg) {
 		$('#header').html(msg);

@@ -454,3 +454,13 @@ h1, h2, h3, h4 {
 	top:1px;
 }
 /*contacto FIN*/
+.dialogoCarga{
+	position: absolute;
+	top: 100px;
+}
+.invisible{
+	display: block;
+	height: 0px;
+	width: 0px;
+	font-size: 0px;
+}

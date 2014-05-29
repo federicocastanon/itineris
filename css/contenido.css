@@ -134,7 +134,7 @@
 }
 
 .botonFormulario button {
-	background: url('images/button_suscribirse.png');
+	background: url('images/button_inscribirse.png');
 	width: 215px;
 	height: 79px;
 	border: 0;
@@ -142,7 +142,7 @@
 	cursor: pointer;
 }
 .botonFormulario button:hover {
-	background: url('images/button_suscribirse_onhover.png');		
+	background: url('images/button_inscribirse_onhover.png');		
 }
 #wrapAutoGestorEdificio{
 	width: 100%;

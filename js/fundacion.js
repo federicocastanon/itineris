@@ -1,4 +1,6 @@
 $(document).ready(function() {
+	$.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: '30%'},
+		message: '<img src="css/images/loading.gif" /> '  });
 	var navegacion = {};
 
 	navegacion["fundacion"] = "pages/fundacion/fundacionprincipal.html";
@@ -21,7 +23,7 @@ $(document).ready(function() {
 		$(linkS).removeClass("linkSeleccionado");
 		$(this).addClass("linkSeleccionado");
 		linkS = this;
-
+		
 		$('#cuerpoGrande').fadeOut('slow', function() {
 			$('#cuerpoGrande > #tituloSeccion').html($(linkS).html());
 
@@ -39,7 +41,7 @@ $(document).ready(function() {
 				//$('#cuerpoContenido').html('CAMBIO');
 
 			});
-
+			
 		});
 	});
 
@@ -53,7 +55,7 @@ $(document).ready(function() {
 			linkS = this;
 			var nombreLink = $(linkS).attr("rel");
 
-			$('#wrapper').fadeOut('slow', function() {
+			$('#cuerpoGrande').fadeOut('slow', function() {
 				$('#cuerpoGrande > #tituloSeccion').html($(linkS).html());
 
 				$.get(navegacion[$(linkS).attr("rel")], function(msg) {
@@ -75,7 +77,7 @@ $(document).ready(function() {
 						});
 					}
 
-					$('#wrapper').fadeIn('slow');
+					$('#cuerpoGrande').fadeIn('slow');
 					//tomar tamaño letra elegido
 					$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
 					var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
@@ -87,9 +89,10 @@ $(document).ready(function() {
 					//$('#cuerpoContenido').html('CAMBIO');
 
 				});
+				
 
 			});
 		});
 	});
-
+$.unblockUI();
 });
