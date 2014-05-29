@@ -1,6 +1,5 @@
 $(document).ready(function() {
-	$.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: '30%'},
-		message: '<img src="css/images/loading.gif" /> '  });
+	
 	var navegacion = {};	
 
 	navegacion["auditoriaycerti"] = "pages/consultoria/auditoriaycerti.html";
@@ -70,8 +69,7 @@ $(document).ready(function() {
 				
 			});
 		});
-	});
-	
-$.unblockUI();
+	});	
+
 	
 });

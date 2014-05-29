@@ -22,6 +22,7 @@ $.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: 
 			$('#logo').click(function() {
 				window.location.href = "home.html";
 			});
+			$.unblockUI();
 		});
 	});
 
@@ -102,7 +103,7 @@ $.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: 
 			});
 		});
 	});
-	$.unblockUI();
+	
 });
 var Books = (function() {
 

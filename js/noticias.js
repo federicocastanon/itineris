@@ -1,4 +1,6 @@
 $(document).ready(function() {
+	$.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: '30%'},
+		message: '<img src="css/images/loading.gif" /> '  });
 	$.get("header.html", function(msg) {
 		$('#header').html(msg);
 		$.get("footer.html", function(footCont) {
@@ -13,6 +15,7 @@ $(document).ready(function() {
 			$('#logo').click(function() {
 				window.location.href = "home.html";
 			});
+			$.unblockUI();
 		});
 
 	});
