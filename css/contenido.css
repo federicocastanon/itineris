@@ -1,6 +1,5 @@
 @import url('jqueryuimin.css');
 @import url('style.css');
-
 .titulo {
 	font-family: acLight;
 	font-style: italic;
@@ -23,21 +22,20 @@
 }
 .texto a:link, .texto a:visited, .texto a:active {
 	font-family: roboto, Geneva, sans-serif;
-	color: #3B3B3B;	
-	text-decoration:none;
-} 
+	color: #3B3B3B;
+	text-decoration: none;
+}
 .texto a:hover {
 	color: #000000;
-	font-weight:bold;
-	text-decoration:none;
+	font-weight: bold;
+	text-decoration: none;
 }
-.texto ul, .listaD{
+.texto ul, .listaD {
 	list-style-image: url('images/infomas.png');
 }
-
 .lista, .texto ul li {
 	font-family: roboto;
-	color: #3B3B3B;	
+	color: #3B3B3B;
 }
 .destacado {
 	font-weight: bold;
@@ -52,13 +50,13 @@
 .mediano {
 	font-size: 14px;
 }
-#pdfCarpeta{
+#pdfCarpeta {
 	display: block;
 	height: 81px;
 	width: 65px;
 	background-image: url('images/pdf_ico.png');
 }
-#suscripcion {		
+#suscripcion {
 	display: none;
 	background: #FFF;
 	border-radius: 0px;
@@ -70,69 +68,66 @@
 }
 #suscripcionContainer {
 	background: #FFF;
-	padding: 2% 3% 2% 3%;	
+	padding: 2% 3% 2% 3%;
 	min-width: 530px;
 }
-.formContacto{
+.formContacto {
 	margin-top: 4%;
 }
-#suscripcion-header{
+#suscripcion-header {
 	color: #0078ad;
 }
-#suscripcion-header div{
-	font-style: italic;	
+#suscripcion-header div {
+	font-style: italic;
 }
-.campoForm{
+.campoForm {
 	margin: 1% 2% 4% 0;
-	max-width: 300px;	
+	max-width: 300px;
 	font-family: roboto;
 	color: #0078ad;
 }
-.campoform label{
+.campoform label {
 	width: 40%;
 	float: right;
 }
-
-.requerido:after{
-	content:'    '  url('images/infomas.png');
+.requerido:after {
+	content: '    ' url('images/infomas.png');
 	width: 10px;
 	height: 14px;
 }
-
-.campoForm input{
+.campoForm input {
 	border: 0;
 	border-right: 1px solid #0078ad;
 	border-bottom: 1px solid #0078ad;
-	float: right;	
+	float: right;
 	padding: 0;
 }
-.campoFormTextArea{
+.campoFormTextArea {
 	height: 60px;
 	float: left;
-	border: 1px solid #0078ad;	
+	border: 1px solid #0078ad;
 }
-.aclaracion{
-	margin: 2% 0 2% 0;	
+.aclaracion {
+	margin: 2% 0 2% 0;
 	width: 100%;
 	float: left;
 }
-.botones{
+.botones {
 	width: 100%;
 	float: left;
 }
-#suscribir{
-	background: url('images/button_suscribirse.png');
+#suscribir {
+	background: url('images/button_inscribirse.png');
 	width: 215px;
 	height: 79px;
-	border: 0;	
+	border: 0;
 	cursor: pointer;
 	display: block;
 	float: left;
 }
-#suscribir:hover{
-	background: url('images/button_suscribirse_onhover.png');
+#suscribir:hover {
+	background: url('images/button_inscribirse_onhover.png');
 }
-
 .botonFormulario button {
 	background: url('images/button_inscribirse.png');
 	width: 215px;
@@ -142,13 +137,13 @@
 	cursor: pointer;
 }
 .botonFormulario button:hover {
-	background: url('images/button_inscribirse_onhover.png');		
+	background: url('images/button_inscribirse_onhover.png');
 }
-#wrapAutoGestorEdificio{
+#wrapAutoGestorEdificio {
 	width: 100%;
 	min-height: 202px;
 }
-#autogestor{
+#autogestor {
 	background: url('images/autogestor.png') no-repeat;
 	padding-left: 115px;
 	min-height: 162px;
@@ -156,18 +151,18 @@
 	width: 20%;
 	margin-right: 10px;
 }
-#edificios{
+#edificios {
 	background: url('images/edificios.png') no-repeat;
 	padding-left: 210px;
 	min-height: 128px;
 	float: left;
 	width: 20%;
 }
-#wrapSenDvdRev{
+#wrapSenDvdRev {
 	width: 100%;
 	min-height: 80px;
 }
-#senialadores{
+#senialadores {
 	background: url('images/senialadores.png') no-repeat;
 	padding-left: 54px;
 	min-height: 76px;
@@ -175,7 +170,7 @@
 	width: 17%;
 	margin-right: 10px;
 }
-#dvds{
+#dvds {
 	background: url('images/dvd.png') no-repeat;
 	padding-left: 68px;
 	min-height: 71px;
@@ -183,22 +178,44 @@
 	width: 20%;
 	margin-right: 10px;
 }
-#revistanc{
+#revistanc {
 	background: url('images/revista.png') no-repeat;
 	padding-left: 65px;
 	min-height: 80px;
 	float: left;
 	width: 33%;
 }
-#revistanc p{
-	margin: 10 0 0 0;
+#revistanc p {
+	margin: 10px 0 0 0;
 }
-#revistanc ul{
+#revistanc ul {
 	margin: 0;
 	padding: 0 0 0 15px;
 }
-.fecha{
+.fecha {
 	font-family: roboto, Geneva, sans-serif;
 	color: #3B3B3B;
 	font-size: 10px;
+}
+#lean_overlay {
+	position: fixed;
+	z-index: 100;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	background: #000;
+	display: none;
+}
+.modal_close {
+	position: absolute;
+	top: 0px;
+	right:0px;
+	margin-right: -9px;
+	margin-top: -9px;
+	display: block;
+	width: 18px;
+	height: 18px;
+	background: url(images/cerrar.png);
+	z-index: 2;
 }

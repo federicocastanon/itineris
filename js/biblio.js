@@ -32,8 +32,11 @@ $.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: 
 		value : 12,
 		step : 5,
 		change : function(event, ui) {
-			$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
-			$('.campoForm').css("font-size", $('#tamanioLetra').slider("option", "value"));
+			var valor = $('#tamanioLetra').slider("option", "value");
+			$('#cuerpoContenido > p').css("font-size", valor);
+			$('.texto').css("font-size", valor);
+			$('.descripcionDocumento').css("font-size", valor);
+			$('.documento').height(10 * valor);
 			var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
 			//el 5 es por el padding
 			var altura2 = $("#cuerpo").height() * 1.1 + $("#cuerpoGrande").height() * 1.1;
@@ -46,9 +49,15 @@ $.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: 
 
 	navegacion["desta"] = "pages/biblioteca/destacados.html";
 	navegacion["nove"] = "pages/biblioteca/novedades.html";
-	navegacion['general'] = "pages/biblioteca/general.html";
-	navegacion['teor'] = "pages/biblioteca/teoria.html";
-	navegacion["inves"] = "pages/biblioteca/investigacion.html";
+	navegacion['autoDet'] = "pages/biblioteca/autodeterminacion.html";
+	navegacion['derechos'] = "pages/biblioteca/derechos.html";
+	navegacion["inclu"] = "pages/biblioteca/inclusion.html";
+	navegacion["traInst"] = "pages/biblioteca/trabajoinstitucional.html";
+	navegacion["autoGes"] = "pages/biblioteca/autogestion.html";
+	navegacion["familias"] = "pages/biblioteca/familias.html";	
+	
+	
+	
 
 	$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
 	$('.listaD > li').css("font-size", $('#tamanioLetra').slider("option", "value"));

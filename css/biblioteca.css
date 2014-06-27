@@ -43,7 +43,7 @@
  }*/
 
 .bk-info p {
-	line-height: 20px;
+	/*line-height: 20px;*/
 	font-size: 12px;
 	font-family: roboto;
 	font-style: italic;
@@ -556,7 +556,7 @@
 .documento {
 	margin: 20px 10px 35px 15px;
 	width: 95%;
-	min-height: 110px;
+	min-height: 110px;	
 }
 .tituloDocumento {
 	font-size: 14px;

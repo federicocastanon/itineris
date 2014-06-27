@@ -8,10 +8,11 @@
 		<link rel="stylesheet" href="css/contenido.css" type="text/css" media="screen"/>
 		<link rel="shortcut icon" href="css/img/favicon.png">
 		<link rel="icon" type="image/ico" href="css/img/favicon.png">
-		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="js/jqueryuimin.js"></script>	
 		<script src="js/jquery.blockUI.js"></script>	
 		<script type="text/javascript" src="js/basico.js"></script>
-		<script type="text/javascript" src="js/jqueryuimin.js"></script>
+		
 	</head>
 	<body>
 		<div id="header"></div>
@@ -30,8 +31,7 @@
 					Contacto
 				</div>
 				<p class="titulomenor" style="max-width: 500px">
-					Si desea recibir información de eventos o contactarse con nosotros por cualquier duda que tenga, por favor llene el siguiente formulario
-					y a la brevedad nos comunicaremos con usted.
+					Si quiere recibir información sobre las actividades de la fundación Itineris o quiere hacernos una pregunta, envíenos su mensaje.
 				</p>
 				<form class="formContacto titulomenor" name="formu" id="formu" action="index.php?unirse=1&amp;ubi=0&amp;sububi=7" method="post" enctype="multipart/form-data">
 					<div class="campoForm">
@@ -51,14 +51,14 @@
 						<input id="mail" type="email" tabindex="4">
 					</div>
 					<div class="campoForm ">
-						<p class="requerido">Consultas</p>
+						<p class="requerido">Mensaje</p>
 						<textarea id="consulta" class="campoFormTextArea" name="consulta" cols="50" rows="3" tabindex="5" ></textarea>
 					</div>
 					<div class="aclaracion">
-						<span class="requerido">Los campos con </span><span> son obligatorios</span>
+						<span class="requerido">Los campos con </span><span> son datos imprescindibles para poder responderte</span>
 					</div>
 					<div class="botones">
-						<input type="reset" value="Eliminar Datos" class="btnEliminar">
+						<input type="reset" value="Borrar todo" class="btnEliminar">
 						&nbsp;
 						<input type="button" value="Enviar" id="manda" name="manda" onclick="javascript:validar();" class="btnEnviar">
 					</div>
