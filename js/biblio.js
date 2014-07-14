@@ -49,6 +49,7 @@ $.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: 
 
 	navegacion["desta"] = "pages/biblioteca/destacados.html";
 	navegacion["nove"] = "pages/biblioteca/novedades.html";
+	navegacion["calVi"] = "pages/biblioteca/calidadDeVida.html";
 	navegacion['autoDet'] = "pages/biblioteca/autodeterminacion.html";
 	navegacion['derechos'] = "pages/biblioteca/derechos.html";
 	navegacion["inclu"] = "pages/biblioteca/inclusion.html";
