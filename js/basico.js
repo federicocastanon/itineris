@@ -35,5 +35,6 @@ $(document).ready(function() {
 			$("#wrapper").height(altura1 < altura2 ? altura2 : altura1);
 		}
 	});
+	$('.ui-slider-handle').attr('tabindex',30);
 
 });

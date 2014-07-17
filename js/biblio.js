@@ -44,6 +44,7 @@ $.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: 
 			$("#wrapper").height(altura1 < altura2 ? altura2 : altura1);
 		}
 	});
+	$('.ui-slider-handle').attr('tabindex',30);
 
 	var navegacion = {};
 
@@ -63,7 +64,7 @@ $.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: 
 	$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
 	$('.listaD > li').css("font-size", $('#tamanioLetra').slider("option", "value"));
 
-	$('#linksNavegacion > ul > .linkNavegacion').each(function(index) {
+	$('.linkNavegacion').each(function(index) {
 		$(this).click(function() {
 
 			var linkS = $('.linkSeleccionado');
@@ -111,6 +112,14 @@ $.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: 
 
 				});
 			});
+		$(this).blur();
+		});
+		$(this).keypress(function(e) {
+			if(e.which == 13) {//Enter key pressed
+				$(this).click();
+				$(this).focus();
+				//Trigger search button click event
+			}
 		});
 	});
 	

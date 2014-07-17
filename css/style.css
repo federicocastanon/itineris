@@ -1,5 +1,4 @@
 @import url('fonts.css');
-
 html, body {
 	margin: 0;
 	padding: 0;
@@ -7,6 +6,7 @@ html, body {
 	width: 100%;
 	background-color: #FFFFFF;
 }
+
 #header {
 	width: 100%;
 	min-height: 54px;
@@ -29,7 +29,6 @@ html, body {
 	padding: 0;
 	cursor: pointer;
 }
-
 #wrapper {
 	background-color: #FFFFFF;
 	background-size: auto 100%;
@@ -46,7 +45,6 @@ html, body {
 	width: 90%;
 	margin: auto;
 }
-
 #footer {
 	background-color: #005E84;
 	color: #FFF;
@@ -58,7 +56,6 @@ html, body {
 h1, h2, h3, h4 {
 	margin: 0;
 }
-
 #menu {
 	position: absolute;
 	font-family: roboto;
@@ -132,10 +129,10 @@ h1, h2, h3, h4 {
 	color: #FFFFFF;
 	font-family: Georgia;
 	float: right;
-	margin: 2% 0.8% 0px 0px;	
+	margin: 2% 0.8% 0px 0px;
 	cursor: pointer;
 }
-.redes ul li img{
+.redes ul li img {
 	height: 20px;
 }
 .containerLinkFoot {
@@ -235,6 +232,9 @@ h1, h2, h3, h4 {
 	margin-left: 2%;
 	float: left;
 	width: 98%;
+	
+}
+#navegacion a#titulo {
 	cursor: pointer;
 }
 #navegacion ul {
@@ -254,7 +254,12 @@ h1, h2, h3, h4 {
 	margin: 0 0 10px 0;
 	padding-right: 4%;
 	cursor: pointer;
+	text-decoration: none;
 }
+.linkNavegacion:hover{
+	color: #212121;
+}
+
 .linkSeleccionado {
 	color: #444;
 	border-bottom: 2px solid #D0D0D0;
@@ -311,7 +316,6 @@ h1, h2, h3, h4 {
 	padding: 0 3% 0 3%;
 	cursor: pointer;
 }
-
 #enlacesPermanentes {
 	height: 56px;
 	float: right;
@@ -319,7 +323,6 @@ h1, h2, h3, h4 {
 	margin-right: 12%;
 	width: 380px;
 }
-
 #enlacesPermanentes div {
 	height: 44px;
 	width: 56px;
@@ -361,7 +364,6 @@ h1, h2, h3, h4 {
 #biblioteca a:hover {
 	background: url(images/tira_botonera.png) -168px -44px no-repeat;
 }
-
 /*Contenido*/
 /*Contacto*/
 .btnEliminar {
@@ -370,7 +372,7 @@ h1, h2, h3, h4 {
 	box-shadow: inset 0px 1px 0px 0px #ffffff;
 	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e5e5e5), color-stop(1, #dfdfdf) );
 	background: -moz-linear-gradient( center top, #e5e5e5 5%, #dfdfdf 100% );
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e5e5', endColorstr='#dfdfdf');
+	filter: progid :DXImageTransform.Microsoft.gradient(startColorstr='#e5e5e5', endColorstr='#dfdfdf');
 	background-color: #e5e5e5;
 	-webkit-border-top-left-radius: 5px;
 	-moz-border-radius-topleft: 5px;
@@ -403,7 +405,7 @@ h1, h2, h3, h4 {
 .btnEliminar :hover {
 	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #e5e5e5) );
 	background: -moz-linear-gradient( center top, #dfdfdf 5%, #e5e5e5 100% );
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#e5e5e5');
+	filter: progid :DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#e5e5e5');
 	background-color: #dfdfdf;
 	cursor: pointer;
 }
@@ -412,57 +414,58 @@ h1, h2, h3, h4 {
 	top: 1px;
 }
 .btnEnviar {
-	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
-	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
-	box-shadow:inset 0px 1px 0px 0px #ffffff;
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e5e5e5), color-stop(1, #dfdfdf) );
-	background:-moz-linear-gradient( center top, #e5e5e5 5%, #dfdfdf 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#e5e5e5', endColorstr='#dfdfdf');
-	background-color:#e5e5e5;
-	-webkit-border-top-left-radius:5px;
-	-moz-border-radius-topleft:5px;
-	border-top-left-radius:5px;
-	-webkit-border-top-right-radius:5px;
-	-moz-border-radius-topright:5px;
-	border-top-right-radius:5px;
-	-webkit-border-bottom-right-radius:5px;
-	-moz-border-radius-bottomright:5px;
-	border-bottom-right-radius:5px;
-	-webkit-border-bottom-left-radius:5px;
-	-moz-border-radius-bottomleft:5px;
-	border-bottom-left-radius:5px;
-	text-indent:0;
-	border:1px solid #dcdcdc;
-	display:inline-block;
-	color:#005f84;
-	font-family:roboto;
-	font-size:13px;
-	font-weight:bold;
-	font-style:normal;
-	height:25px;
-	line-height:25px;
-	width:70px;
-	text-decoration:none;
-	text-align:center;
-	text-shadow:1px 1px 0px #ffffff;
+	-moz-box-shadow: inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
+	box-shadow: inset 0px 1px 0px 0px #ffffff;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e5e5e5), color-stop(1, #dfdfdf) );
+	background: -moz-linear-gradient( center top, #e5e5e5 5%, #dfdfdf 100% );
+	filter: progid :DXImageTransform.Microsoft.gradient(startColorstr='#e5e5e5', endColorstr='#dfdfdf');
+	background-color: #e5e5e5;
+	-webkit-border-top-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-right-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-bottom-right-radius: 5px;
+	-webkit-border-bottom-left-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	border-bottom-left-radius: 5px;
+	text-indent: 0;
+	border: 1px solid #dcdcdc;
+	display: inline-block;
+	color: #005f84;
+	font-family: roboto;
+	font-size: 13px;
+	font-weight: bold;
+	font-style: normal;
+	height: 25px;
+	line-height: 25px;
+	width: 70px;
+	text-decoration: none;
+	text-align: center;
+	text-shadow: 1px 1px 0px #ffffff;
 	cursor: pointer;
 }
 .btnEnviar:hover {
-	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #e5e5e5) );
-	background:-moz-linear-gradient( center top, #dfdfdf 5%, #e5e5e5 100% );
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#e5e5e5');
-	background-color:#dfdfdf;
+	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #e5e5e5) );
+	background: -moz-linear-gradient( center top, #dfdfdf 5%, #e5e5e5 100% );
+	filter: progid :DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#e5e5e5');
+	background-color: #dfdfdf;
 	cursor: pointer;
-}.btnEnviar:active {
-	position:relative;
-	top:1px;
+}
+.btnEnviar:active {
+	position: relative;
+	top: 1px;
 }
 /*contacto FIN*/
-.dialogoCarga{
+.dialogoCarga {
 	position: absolute;
 	top: 100px;
 }
-.invisible{
+.invisible {
 	display: block;
 	height: 0px;
 	width: 0px;

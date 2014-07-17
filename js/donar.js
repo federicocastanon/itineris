@@ -1,6 +1,13 @@
 $(document).ready(function() {
-$.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: '30%'},
-		message: '<img src="css/images/loading.gif" /> '  });
+	$.blockUI({
+		css : {
+			backgroundColor : '#0078AD',
+			color : '#fff',
+			top : '20%',
+			left : '30%'
+		},
+		message : '<img src="css/images/loading.gif" /> '
+	});
 	$.get("header.html", function(msg) {
 		$('#header').html(msg);
 		$.get("footer.html", function(footCont) {
@@ -17,26 +24,21 @@ $.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: 
 			});
 			$.unblockUI();
 		});
-
 	});
-
-	
 	var navegacion = {};
 
 	navegacion["donarPrincipal"] = "pages/donar/donarPrincipal.html";
 	navegacion["donarcorto"] = "pages/donar/donarCorto.html";
 	navegacion["donarlargo"] = "pages/donar/donarLargo.html";
 
-	
-
-$('#tamanioLetra').slider({
+	$('#tamanioLetra').slider({
 		min : 11,
 		max : 43,
 		value : 12,
 		step : 5,
 		change : function(event, ui) {
 			$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
-			$('.campoForm').css("font-size", $('#tamanioLetra').slider("option", "value"));
+			$('.listaD > li').css("font-size", $('#tamanioLetra').slider("option", "value"));
 			var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
 			//el 5 es por el padding
 			var altura2 = $("#cuerpoDonar").height() * 1.1;
@@ -44,6 +46,7 @@ $('#tamanioLetra').slider({
 			$("#wrapperDonar").height(altura1 < altura2 ? altura2 : altura1);
 		}
 	});
+	$('.ui-slider-handle').attr('tabindex',30);
 	$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
 
 	$('#titulo').click(function() {
@@ -72,11 +75,18 @@ $('#tamanioLetra').slider({
 				//$('#cuerpoContenido').html('CAMBIO');
 
 			});
-
 		});
+		$(this).blur();
+	});
+	$('#titulo').keypress(function(e) {
+		if(e.which == 13) {//Enter key pressed
+			$(this).click();
+			$(this).focus();
+			//Trigger search button click event
+		}
 	});
 
-	$('#linksNavegacion > ul > .linkNavegacion').each(function(index) {
+	$('.linkNavegacion').each(function(index) {
 		$(this).click(function() {
 
 			var linkS = $('.linkSeleccionado');
@@ -105,9 +115,15 @@ $('#tamanioLetra').slider({
 					//$('#cuerpoContenido').html('CAMBIO');
 
 				});
-
 			});
+			$(this).blur();
+		});
+		$(this).keypress(function(e) {
+			if(e.which == 13) {//Enter key pressed
+				$(this).click();
+				$(this).focus();
+				//Trigger search button click event
+			}
 		});
 	});
-
 });
