@@ -20,6 +20,28 @@
 	color: #3B3B3B;
 	font-size: 12px;
 }
+.azul{
+	color: #0078ad;
+}
+.listaL{
+	font-size: 12px;
+	list-style-image: url('images/infomas.png');
+	margin-top: 30px;
+}
+.listaL li{
+	margin: 5px 0 1px 0;
+}
+
+.linkTexto{
+	font-family: roboto;
+	font-style: italic;
+	color: #3B3B3B;
+	cursor: pointer;
+}
+.linkTexto:hover{
+	color: #0078ad;
+}
+
 .texto a:link, .texto a:visited, .texto a:active {
 	font-family: roboto, Geneva, sans-serif;
 	color: #3B3B3B;

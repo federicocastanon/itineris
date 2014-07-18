@@ -57,18 +57,17 @@ $(document).ready(function() {
 		$(this).addClass("linkSeleccionado");
 		linkS = this;
 
-		$('#cuerpo').fadeOut('slow', function() {
-			$('#cuerpo > #tituloSeccion').html($(linkS).html());
-
+		$('#cuerpoContenido').fadeOut('slow', function() {
+			$
 			$.get(navegacion[$(linkS).attr("rel")], function(msg) {
 				$('#cuerpoContenido').html(msg);
-				$('#cuerpo').fadeIn('slow');
+				$('#cuerpoContenido').fadeIn('slow');
 				//tomar tamaño letra elegido
 				$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
 				$('.listaD > li').css("font-size", $('#tamanioLetra').slider("option", "value"));
 				var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
 				//el 5 es por el padding
-				var altura2 = $("#cuerpo").height() * 1.1;
+				var altura2 = $("#cuerpoContenido").height() * 1.1;
 				//el cuerpo crece con el contenido, al wrapper hay que hacerlo crecer
 				$("#wrapperDonar").height(altura1 < altura2 ? altura2 : altura1);
 
@@ -95,24 +94,20 @@ $(document).ready(function() {
 			$(this).addClass("linkSeleccionado");
 			linkS = this;
 
-			$('#cuerpo').fadeOut('slow', function() {
+			$('#cuerpoContenido').fadeOut('slow', function() {
 
 				$.get(navegacion[$(linkS).attr("rel")], function(msg) {
 					$('#cuerpoContenido').html(msg);
-					$('#cuerpo').fadeIn('slow');
+					$('#cuerpoContenido').fadeIn('slow');
 					//tomar tamaño letra elegido
 					$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
+					$('.listaD > li').css("font-size", $('#tamanioLetra').slider("option", "value"));
 					var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
 					//el 5 es por el padding
-					var altura2 = $("#cuerpo").height() * 1.1;
+					var altura2 = $("#cuerpoContenido").height() * 1.1;
 					//el cuerpo crece con el contenido, al wrapper hay que hacerlo crecer
-					$("#wrapperDonar").height(altura1 < altura2 ? altura2 : altura1);
-					$("#suscribir").leanModal({
-						top : 100,
-						overlay : 0.4,
-						closeButton : ".modal_close"
-					});
-					//$('#cuerpoContenido').html('CAMBIO');
+					$("#wrapperDonar").height(altura1 < altura2 ? altura2 : altura1);					
+					
 
 				});
 			});

@@ -55,7 +55,12 @@ function agrandar(objeto) {
 
 
 $(document).ready(function() {
-	$.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: '30%'},
+	$.blockUI({ css: { backgroundColor: '#3B3B3B', color: '#fff', top: '20%', left: '30%', width: '0px', height: '0px'},
+	overlayCSS:  { 
+        backgroundColor: '#3B3B3B', 
+        opacity:         1, 
+        cursor:          'wait' 
+   },
 	message: '<img src="css/images/loading.gif" /> '  });
 	
 	$.get("header.html", function(msg) {
@@ -86,8 +91,8 @@ $(document).ready(function() {
 			var timer;
 			var delay = 500;
 			
-			//setTimeout($.unblockUI, 2000);
-			$.unblockUI();
+			setTimeout($.unblockUI, 2000);
+			//$.unblockUI();
 			
 			$(".agrandable").hover(function() {
 				var elLink = $(this);
