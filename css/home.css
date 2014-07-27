@@ -4,8 +4,7 @@
 	background-color: #A9CDDD;
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-position-x: 100%;
-	background-position-y: 2px;
+	background-position: 100% 2px;	
 	min-width: 744px;
 	min-height: 205px;
 	width: 100%;
@@ -68,6 +67,7 @@
 	color: #0078ad;
 	padding: 4% 10% 0 3%;
 	font-weight: bold;
+	cursor: pointer;
 }	
 .linkHome p{
 	font-size:  12px;

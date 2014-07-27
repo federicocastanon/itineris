@@ -1,17 +1,15 @@
 jQuery.fn.animateAuto = function(prop, speed, callback) {
 	var elem, valHeight, maxWidth;
-	return this.each(function(i, el) {
-		el = jQuery(el), maxWidth = el.width() - 37, elem = el.clone().css({
+	return this.each(function(i, el) { el = jQuery(el), maxWidth = el.width() - 37, elem = el.clone().css({
 			"overflow" : "visible",
 			"height" : "auto",
 			"font-size" : "12px",
 			"width" : maxWidth,
 			"font-family" : "acLight"
-		}).appendTo("body");
-		valHeight = elem.height(), elem.remove();
+		}).appendTo("body"); valHeight = elem.height(), elem.remove();
 		var despl = $(el).height() - valHeight;
 		var margin = despl + 'px 2% 0 2%';
-		if (prop == 'both') {
+		if(prop == 'both') {
 			el.animate({
 				"height" : height,
 				"margin" : margin
@@ -25,20 +23,18 @@ jQuery.fn.animateAuto = function(prop, speed, callback) {
 	});
 };
 function agrandar(objeto) {
-	if ($(objeto).children('p').prop('offsetHeight') < $(objeto).children('p').prop('scrollHeight') - 2 || $(objeto).children('p').prop('offsetWidth') < $(objeto).children('p').prop('scrollWidth') - 2) {
+	if($(objeto).children('p').prop('offsetHeight') < $(objeto).children('p').prop('scrollHeight') - 2 || $(objeto).children('p').prop('offsetWidth') < $(objeto).children('p').prop('scrollWidth') - 2) {
 		// your element have overflow
 
 		var elem, nuevaAltura, maxWidth, alturaVieja;
-		$(objeto).children('p').each(function(i, el) {
-			el = jQuery(el), maxWidth = el.width() - 37, alturaVieja = el.height() - 24, elem = el.clone().css({
+		$(objeto).children('p').each(function(i, el) { el = jQuery(el), maxWidth = el.width() - 37, alturaVieja = el.height() - 24, elem = el.clone().css({
 				"overflow" : "visible",
 				"height" : "auto",
 				"font-size" : "12px",
 				"width" : maxWidth,
 				"font-family" : "acLight",
 				"padding" : "0 29px 0 8px"
-			}).appendTo("body");
-			nuevaAltura = elem.height(), elem.remove();
+			}).appendTo("body"); nuevaAltura = elem.height(), elem.remove();
 
 		});
 		nuevaAltura = $(objeto).height() + nuevaAltura - alturaVieja;
@@ -55,14 +51,23 @@ function agrandar(objeto) {
 
 
 $(document).ready(function() {
-	$.blockUI({ css: { backgroundColor: '#3B3B3B', color: '#fff', top: '20%', left: '30%', width: '0px', height: '0px'},
-	overlayCSS:  { 
-        backgroundColor: '#3B3B3B', 
-        opacity:         1, 
-        cursor:          'wait' 
-   },
-	message: '<img src="css/images/loading.gif" /> '  });
-	
+	$.blockUI({
+		css : {
+			backgroundColor : '#3B3B3B',
+			color : '#fff',
+			top : '20%',
+			left : '30%',
+			width : '0px',
+			height : '0px'
+		},
+		overlayCSS : {
+			backgroundColor : '#3B3B3B',
+			opacity : 1,
+			cursor : 'wait'
+		},
+		message : '<img src="css/images/loading.gif" /> '
+	});
+
 	$.get("header.html", function(msg) {
 		$('#header').html(msg);
 		$.get("footer.html", function(footCont) {
@@ -90,10 +95,10 @@ $(document).ready(function() {
 			});
 			var timer;
 			var delay = 500;
-			
+
 			setTimeout($.unblockUI, 2000);
 			//$.unblockUI();
-			
+
 			$(".agrandable").hover(function() {
 				var elLink = $(this);
 				timer = setTimeout(function() {
@@ -103,7 +108,7 @@ $(document).ready(function() {
 				clearTimeout(timer);
 				var clase = $(this).attr('class');
 				var guardarAltura;
-				if (clase == 'linkHome agrandable') {
+				if(clase == 'linkHome agrandable') {
 					guardarAltura = '45%';
 				} else {
 					guardarAltura = '65%';
@@ -118,7 +123,20 @@ $(document).ready(function() {
 				}, 1000);
 			});
 		});
-
 	});
 
+	$('.linkHome').each(function(index) {
+		$(this).click(function() {
+			var link = $(this).find('.pie');
+			var target = link.attr("target");
+
+			if($.trim(target).length > 0) {
+				window.open(link.attr("href"), target);
+			} else {
+				window.location = link.attr("href");
+			}
+
+			event.preventDefault();
+		});
+	});
 });

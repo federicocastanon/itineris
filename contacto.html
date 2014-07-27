@@ -1,16 +1,16 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="es" lang="es">
 	<head>
-		<title>Itineris</title>
+		<title>Itineris Contacto</title>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<meta name="description" content="" />
 		<meta name="keywords" content=""/>		
 		<link rel="stylesheet" href="css/contenido.css" type="text/css" media="screen"/>
-		<link rel="shortcut icon" href="css/img/favicon.png">
-		<link rel="icon" type="image/ico" href="css/img/favicon.png">
-		<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+		<link rel="shortcut icon" href="css/img/favicon.png" />
+		<link rel="icon" type="image/ico" href="css/img/favicon.png" />
+		<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
 		<script type="text/javascript" src="js/jqueryuimin.js"></script>	
-		<script src="js/jquery.blockUI.js"></script>	
+		<script type="text/javascript" src="js/jquery.blockUI.js"></script>	
 		<script type="text/javascript" src="js/basico.js"></script>
 		
 	</head>
@@ -27,9 +27,9 @@
 					</div>
 					<div id="terceraColumna"></div>
 				</div>
-				<div class="titulo">
+				<h1 class="titulo">
 					Contacto
-				</div>
+				</h1>
 				<p class="titulomenor" style="max-width: 500px">
 					Si quiere recibir información sobre las actividades de la fundación Itineris o quiere hacernos una pregunta, envíenos su mensaje.
 				</p>
@@ -51,16 +51,16 @@
 						<input id="mail" type="email" tabindex="34">
 					</div>
 					<div class="campoForm ">
-						<p class="requerido">Mensaje</p>
+						<label for="consulta" class="requerido">Mensaje</label>
 						<textarea id="consulta" class="campoFormTextArea" name="consulta" cols="50" rows="3" tabindex="35" ></textarea>
 					</div>
 					<div class="aclaracion">
 						<span class="requerido">Los campos con </span><span> son datos imprescindibles para poder responderte</span>
 					</div>
 					<div class="botones">
-						<input type="reset" value="Borrar todo" class="btnEliminar" tabindex="37">
-						&nbsp;
 						<input type="button" value="Enviar" id="manda" name="manda" onclick="javascript:validar();" class="btnEnviar" tabindex="36">
+						&nbsp;
+						<input type="reset" value="Borrar todo" class="btnEliminar" tabindex="37">
 					</div>
 				</form>
 			</div>

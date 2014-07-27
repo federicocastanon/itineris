@@ -13,16 +13,17 @@ html, body {
 	height: 16%;
 	top: 0;
 	position: relative;
-	display: compact;
+	display: block;
 }
 #fondoHeader {
 	background-color: #F8F8F8;
 }
 #logo {
 	background: url(img/encabezado.png) left no-repeat;
-	background-position-x: 1%;
+	background-position: 1% 0%;
 	background-size: auto 100%;
-	background-color: #F8F8F8;float left;
+	background-color: #F8F8F8;
+	float: left;
 	width: 50%;
 	height: 100%;
 	margin: 0;
@@ -372,8 +373,7 @@ h1, h2, h3, h4 {
 	-webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
 	box-shadow: inset 0px 1px 0px 0px #ffffff;
 	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e5e5e5), color-stop(1, #dfdfdf) );
-	background: -moz-linear-gradient( center top, #e5e5e5 5%, #dfdfdf 100% );
-	filter: progid :DXImageTransform.Microsoft.gradient(startColorstr='#e5e5e5', endColorstr='#dfdfdf');
+	background: -moz-linear-gradient( center top, #e5e5e5 5%, #dfdfdf 100% );	
 	background-color: #e5e5e5;
 	-webkit-border-top-left-radius: 5px;
 	-moz-border-radius-topleft: 5px;
@@ -405,8 +405,7 @@ h1, h2, h3, h4 {
 }
 .btnEliminar :hover {
 	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #e5e5e5) );
-	background: -moz-linear-gradient( center top, #dfdfdf 5%, #e5e5e5 100% );
-	filter: progid :DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#e5e5e5');
+	background: -moz-linear-gradient( center top, #dfdfdf 5%, #e5e5e5 100% );	
 	background-color: #dfdfdf;
 	cursor: pointer;
 }
@@ -419,8 +418,7 @@ h1, h2, h3, h4 {
 	-webkit-box-shadow: inset 0px 1px 0px 0px #ffffff;
 	box-shadow: inset 0px 1px 0px 0px #ffffff;
 	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #e5e5e5), color-stop(1, #dfdfdf) );
-	background: -moz-linear-gradient( center top, #e5e5e5 5%, #dfdfdf 100% );
-	filter: progid :DXImageTransform.Microsoft.gradient(startColorstr='#e5e5e5', endColorstr='#dfdfdf');
+	background: -moz-linear-gradient( center top, #e5e5e5 5%, #dfdfdf 100% );	
 	background-color: #e5e5e5;
 	-webkit-border-top-left-radius: 5px;
 	-moz-border-radius-topleft: 5px;
@@ -453,7 +451,6 @@ h1, h2, h3, h4 {
 .btnEnviar:hover {
 	background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #e5e5e5) );
 	background: -moz-linear-gradient( center top, #dfdfdf 5%, #e5e5e5 100% );
-	filter: progid :DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#e5e5e5');
 	background-color: #dfdfdf;
 	cursor: pointer;
 }

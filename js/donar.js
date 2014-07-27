@@ -37,7 +37,7 @@ $(document).ready(function() {
 		value : 12,
 		step : 5,
 		change : function(event, ui) {
-			$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
+			$('.texto').css("font-size", $('#tamanioLetra').slider("option", "value"));
 			$('.listaD > li').css("font-size", $('#tamanioLetra').slider("option", "value"));
 			var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
 			//el 5 es por el padding
@@ -47,7 +47,7 @@ $(document).ready(function() {
 		}
 	});
 	$('.ui-slider-handle').attr('tabindex',30);
-	$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
+	$('.texto').css("font-size", $('#tamanioLetra').slider("option", "value"));
 
 	$('#titulo').click(function() {
 
@@ -63,7 +63,7 @@ $(document).ready(function() {
 				$('#cuerpoContenido').html(msg);
 				$('#cuerpoContenido').fadeIn('slow');
 				//tomar tamaño letra elegido
-				$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
+				$('.texto').css("font-size", $('#tamanioLetra').slider("option", "value"));
 				$('.listaD > li').css("font-size", $('#tamanioLetra').slider("option", "value"));
 				var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
 				//el 5 es por el padding
@@ -100,7 +100,7 @@ $(document).ready(function() {
 					$('#cuerpoContenido').html(msg);
 					$('#cuerpoContenido').fadeIn('slow');
 					//tomar tamaño letra elegido
-					$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
+					$('.texto').css("font-size", $('#tamanioLetra').slider("option", "value"));
 					$('.listaD > li').css("font-size", $('#tamanioLetra').slider("option", "value"));
 					var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
 					//el 5 es por el padding
