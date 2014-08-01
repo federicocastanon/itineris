@@ -58,7 +58,8 @@ $(document).ready(function() {
 			top : '20%',
 			left : '30%',
 			width : '0px',
-			height : '0px'
+			height : '0px',
+			border: '0px'
 		},
 		overlayCSS : {
 			backgroundColor : '#3B3B3B',
@@ -96,8 +97,8 @@ $(document).ready(function() {
 			var timer;
 			var delay = 500;
 
-			setTimeout($.unblockUI, 2000);
-			//$.unblockUI();
+			//setTimeout($.unblockUI, 20000);
+			$.unblockUI();
 
 			$(".agrandable").hover(function() {
 				var elLink = $(this);

@@ -14,11 +14,15 @@
 	color: #0078ad;
 	font-size: 14px;
 	font-family: roboto;
+	margin: 5px 0 0 0 ;
 }
 .texto, .listaD {
 	font-family: roboto;
 	color: #3B3B3B;
 	font-size: 12px;
+}
+.destacado{
+	font-weight: bold;
 }
 .azul{
 	color: #0078ad;
@@ -240,4 +244,7 @@
 	height: 18px;
 	background: url(images/cerrar.png);
 	z-index: 2;
+}
+.imagenNoticia img{
+	max-height: 200px;
 }

@@ -28,6 +28,7 @@ $.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: 
 		change : function(event, ui) {
 			$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
 			$('.listaD > li').css("font-size", $('#tamanioLetra').slider("option", "value"));
+			$('.titulomenor').css("font-size", $('#tamanioLetra').slider("option", "value"));
 			var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
 			//el 5 es por el padding
 			var altura2 = $("#cuerpo").height() * 1.1 + $("#cuerpoGrande").height() * 1.1;
@@ -48,6 +49,7 @@ $.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: 
 
 	$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
 	$('.listaD > li').css("font-size", $('#tamanioLetra').slider("option", "value"));
+	$('.titulomenor').css("font-size", $('#tamanioLetra').slider("option", "value"));
 	var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
 	//el 5 es por el padding
 	var altura2 = $("#cuerpoGrande").height() * 1.1;
@@ -71,6 +73,7 @@ $.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: 
 				//tomar tamaño letra elegido
 				$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
 				$('.listaD > li').css("font-size", $('#tamanioLetra').slider("option", "value"));
+				$('.titulomenor').css("font-size", $('#tamanioLetra').slider("option", "value"));
 				var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
 				//el 5 es por el padding
 				var altura2 = $("#cuerpoGrande").height() * 1.1;
@@ -127,6 +130,7 @@ $.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: 
 					//tomar tamaño letra elegido
 					$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
 					$('.listaD > li').css("font-size", $('#tamanioLetra').slider("option", "value"));
+					$('.titulomenor').css("font-size", $('#tamanioLetra').slider("option", "value"));
 					var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
 					//el 5 es por el padding
 					var altura2 = $("#cuerpoGrande").height() * 1.1;
