@@ -165,28 +165,51 @@
 .botonFormulario button:hover {
 	background: url('images/button_inscribirse_onhover.png');
 }
-#wrapAutoGestorEdificio {
+
+#wrapParaQue{
 	width: 100%;
-	min-height: 202px;
+	min-height: 108px;	
+	display: inline-block;
 }
-#autogestor {
-	background: url('images/autogestor.png') no-repeat;
-	padding-left: 115px;
-	min-height: 162px;
-	float: left;
-	width: 20%;
-	margin-right: 10px;
+
+#wrapComo{
+	width: 100%;
+	min-height: 150px;
+	display: inline-block;
 }
-#edificios {
-	background: url('images/edificios.png') no-repeat;
-	padding-left: 210px;
-	min-height: 128px;
-	float: left;
-	width: 20%;
-}
+
 #wrapSenDvdRev {
 	width: 100%;
 	min-height: 80px;
+	display: inline-block;
+}
+.donarTercio{
+	width: 28%;
+	padding: 5px 5px 5px 10px;
+	height: 100%;
+	float: left;
+	text-align: center;
+}
+.tarjeta{
+	padding-top: 100px;
+	background: url('images/tarjeta.png') no-repeat; 
+}
+.transferencia{
+	padding-top: 100px;
+	background: url('images/transferencia.png') no-repeat;
+}
+.mensaje{
+	padding-top: 100px;
+	background: url('images/mensaje.png') no-repeat;
+}
+
+.tituloDonar{
+	font-size: 35px;	
+	font-family: acLight;
+	color: #0078ad;	
+	margin: 10px 0px 25px 0px;
+	font-style: italic;
+	text-align: center;
 }
 #senialadores {
 	background: url('images/senialadores.png') no-repeat;

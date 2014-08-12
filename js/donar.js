@@ -39,6 +39,7 @@ $(document).ready(function() {
 		change : function(event, ui) {
 			$('.texto').css("font-size", $('#tamanioLetra').slider("option", "value"));
 			$('.listaD > li').css("font-size", $('#tamanioLetra').slider("option", "value"));
+			$('.listaL > li').css("font-size", $('#tamanioLetra').slider("option", "value"));
 			var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
 			//el 5 es por el padding
 			var altura2 = $("#cuerpoDonar").height() * 1.1;
@@ -65,6 +66,7 @@ $(document).ready(function() {
 				//tomar tamaño letra elegido
 				$('.texto').css("font-size", $('#tamanioLetra').slider("option", "value"));
 				$('.listaD > li').css("font-size", $('#tamanioLetra').slider("option", "value"));
+				$('.listaL > li').css("font-size", $('#tamanioLetra').slider("option", "value"));
 				var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
 				//el 5 es por el padding
 				var altura2 = $("#cuerpoContenido").height() * 1.1;
@@ -102,6 +104,7 @@ $(document).ready(function() {
 					//tomar tamaño letra elegido
 					$('.texto').css("font-size", $('#tamanioLetra').slider("option", "value"));
 					$('.listaD > li').css("font-size", $('#tamanioLetra').slider("option", "value"));
+					$('.listaL > li').css("font-size", $('#tamanioLetra').slider("option", "value"));
 					var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
 					//el 5 es por el padding
 					var altura2 = $("#cuerpoContenido").height() * 1.1;

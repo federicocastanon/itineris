@@ -557,6 +557,7 @@
 	margin: 20px 10px 35px 15px;
 	width: 95%;
 	min-height: 110px;	
+	display: inline-block;
 }
 .tituloDocumento {
 	font-size: 14px;

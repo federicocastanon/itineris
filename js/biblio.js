@@ -1,6 +1,13 @@
 $(document).ready(function() {
-$.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: '30%'},
-		message: '<img src="css/images/loading.gif" /> '  });
+	$.blockUI({
+		css : {
+			backgroundColor : '#0078AD',
+			color : '#fff',
+			top : '20%',
+			left : '30%'
+		},
+		message : '<img src="css/images/loading.gif" /> '
+	});
 	$('#cuerpoGrande').css({
 		"min-width" : "850px"
 	});
@@ -36,7 +43,9 @@ $.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: 
 			$('#cuerpoContenido > p').css("font-size", valor);
 			$('.texto').css("font-size", valor);
 			$('.descripcionDocumento').css("font-size", valor);
-			$('.documento').height(10 * valor);
+			$('.tituloDocumento').css("font-size", valor);
+			$('.descargaDocumento').css("font-size", valor);
+			//$('.documento').height(valor * valor / 2);
 			var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
 			//el 5 es por el padding
 			var altura2 = $("#cuerpo").height() * 1.1 + $("#cuerpoGrande").height() * 1.1;
@@ -44,7 +53,7 @@ $.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: 
 			$("#wrapper").height(altura1 < altura2 ? altura2 : altura1);
 		}
 	});
-	$('.ui-slider-handle').attr('tabindex',30);
+	$('.ui-slider-handle').attr('tabindex', 30);
 
 	var navegacion = {};
 
@@ -56,13 +65,15 @@ $.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: 
 	navegacion["inclu"] = "pages/biblioteca/inclusion.html";
 	navegacion["traInst"] = "pages/biblioteca/trabajoinstitucional.html";
 	navegacion["autoGes"] = "pages/biblioteca/autogestion.html";
-	navegacion["familias"] = "pages/biblioteca/familias.html";	
-	
-	
-	
+	navegacion["familias"] = "pages/biblioteca/familias.html";
 
-	$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
-	$('.listaD > li').css("font-size", $('#tamanioLetra').slider("option", "value"));
+	var valor = $('#tamanioLetra').slider("option", "value");
+	$('#cuerpoContenido > p').css("font-size", valor);
+	$('.texto').css("font-size", valor);
+	$('.descripcionDocumento').css("font-size", valor);
+	$('.tituloDocumento').css("font-size", valor);
+	$('.descargaDocumento').css("font-size", valor);
+	//$('.documento').height(valor * valor / 2);
 
 	$('.linkNavegacion').each(function(index) {
 		$(this).click(function() {
@@ -97,8 +108,13 @@ $.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: 
 					}
 
 					//tomar tamaño letra elegido
-					$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
-					$('.listaD > li').css("font-size", $('#tamanioLetra').slider("option", "value"));
+					var valor = $('#tamanioLetra').slider("option", "value");
+					$('#cuerpoContenido > p').css("font-size", valor);
+					$('.texto').css("font-size", valor);
+					$('.descripcionDocumento').css("font-size", valor);
+					$('.tituloDocumento').css("font-size", valor);
+					$('.descargaDocumento').css("font-size", valor);
+					//$('.documento').height(valor * valor / 2);
 					var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
 					//el 5 es por el padding
 					$('#cuerpoGrande').fadeIn('slow', function() {
@@ -112,7 +128,7 @@ $.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: 
 
 				});
 			});
-		$(this).blur();
+			$(this).blur();
 		});
 		$(this).keypress(function(e) {
 			if(e.which == 13) {//Enter key pressed
@@ -122,7 +138,6 @@ $.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: 
 			}
 		});
 	});
-	
 });
 var Books = (function() {
 
