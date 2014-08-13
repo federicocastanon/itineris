@@ -6,7 +6,7 @@
 		 url('fonts/accolade-light-webfont.ttf') format('truetype'), url('fonts/accolade-light-webfont.svg#accolade-lightregular') format('svg');
 		font-weight: normal;
 		font-style: normal;
-	};
+	}
 	@font-face {
 		font-family: 'roboto';
 		src: url('fonts/roboto.eot');

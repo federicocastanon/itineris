@@ -9,7 +9,7 @@ $(document).ready(function() {
 		message : '<img src="css/images/loading.gif" /> '
 	});
 	$('#cuerpoGrande').css({
-		"min-width" : "850px"
+		"min-width" : "75%"
 	});
 	$('#wrapper').css({
 		"min-width" : "1260px"
@@ -92,7 +92,7 @@ $(document).ready(function() {
 
 					if($(linkS).attr("rel") == "desta") {
 						$('#cuerpoGrande').css({
-							"min-width" : "850px"
+							"min-width" : "75%"
 						});
 						$('#wrapper').css({
 							"min-width" : "1260px"

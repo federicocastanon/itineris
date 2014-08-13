@@ -482,11 +482,11 @@
 /* Book 3 */
 
 .book-3 .bk-front > div, .book-3 .bk-back, .book-3 .bk-left, .book-3 .bk-front:after {
-	background-color: #871C2C;
+	background-color: #C8A3CC;
 }
 
 .book-3 .bk-cover {
-	background-image: url(images/tapacopidis.jpg);
+	background-image: url(images/revistaNC04.jpg);
 	background-repeat: no-repeat;
 	background-position: 100% 95%;
 }
