@@ -253,12 +253,13 @@ h1, h2, h3, h4 {
 .linkNavegacion {
 	cursor: pointer;
 	color: #818181;
-	margin: 0 0 10px 0;
+	margin: 0 0 7px 0;
 	padding-right: 4%;
 	cursor: pointer;
 	text-decoration: none;
 	font-size: 14px;
 	font-family: roboto;
+	display: block;
 }
 .linkNavegacion:hover{
 	color: #212121;
@@ -309,6 +310,11 @@ h1, h2, h3, h4 {
 }
 #relacionados a {
 	text-decoration: none;
+	color: #8F1F32;
+}
+#relacionados a:visited{
+	text-decoration: none;
+	color: #8F1F32;
 }
 #relacionados p {
 	font-size: 14px;
@@ -324,6 +330,7 @@ h1, h2, h3, h4 {
 	padding: 0 3% 0 3%;
 	cursor: pointer;
 	text-decoration: none;
+	color: #8F1F32;
 }
 #enlacesPermanentes {
 	height: 56px;

@@ -69,7 +69,7 @@ $(document).ready(function() {
 				$('.listaL > li').css("font-size", $('#tamanioLetra').slider("option", "value"));
 				var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
 				//el 5 es por el padding
-				var altura2 = $("#cuerpoContenido").height() * 1.1;
+				var altura2 = $("#cuerpoContenido").height() * 1.2;
 				//el cuerpo crece con el contenido, al wrapper hay que hacerlo crecer
 				$("#wrapperDonar").height(altura1 < altura2 ? altura2 : altura1);
 
@@ -107,7 +107,7 @@ $(document).ready(function() {
 					$('.listaL > li').css("font-size", $('#tamanioLetra').slider("option", "value"));
 					var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
 					//el 5 es por el padding
-					var altura2 = $("#cuerpoContenido").height() * 1.1;
+					var altura2 = $("#cuerpoContenido").height() * 1.2;
 					//el cuerpo crece con el contenido, al wrapper hay que hacerlo crecer
 					$("#wrapperDonar").height(altura1 < altura2 ? altura2 : altura1);					
 					
