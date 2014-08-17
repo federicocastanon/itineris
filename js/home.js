@@ -56,7 +56,7 @@ $(document).ready(function() {
 			backgroundColor : '#3B3B3B',
 			color : '#fff',
 			top : '20%',
-			left : '30%',
+			left : '20%',
 			width : '0px',
 			height : '0px',
 			border: '0px'
