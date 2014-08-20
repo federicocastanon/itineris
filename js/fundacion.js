@@ -23,7 +23,7 @@ $.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: 
 	$('#tamanioLetra').slider({
 		min : 11,
 		max : 43,
-		value : 12,
+		value : 16,
 		step : 5,
 		change : function(event, ui) {
 			$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));

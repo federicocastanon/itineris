@@ -34,7 +34,7 @@ $(document).ready(function() {
 	$('#tamanioLetra').slider({
 		min : 11,
 		max : 43,
-		value : 12,
+		value : 16,
 		step : 5,
 		change : function(event, ui) {
 			$('.texto').css("font-size", $('#tamanioLetra').slider("option", "value"));

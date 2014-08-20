@@ -1,6 +1,29 @@
+var navegacion = {};
+
+navegacion["cyt"] = "pages/cyt/cytprincipal.html";
+navegacion["cytini"] = "pages/cyt/inicial.html";
+navegacion['cytsupcli'] = "pages/cyt/superclinica.html";
+navegacion['cytfaciauto'] = "pages/cyt/facilitadores.html";
+navegacion["cytsensi"] = "pages/cyt/sensibilizacion.html";
+
+var titulos = {};
+
+titulos["cyt"] = "Cursos y Talleres";
+titulos["cytini"] = "Curso Inicial";
+titulos['cytsupcli'] = "Seminario de supervisión clínica";
+titulos['cytfaciauto'] = "Curso para Facilitadores de autogestores";
+titulos["cytsensi"] = "Talleres de sensibilización";
+
 $(document).ready(function() {
-$.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: '30%'},
-		message: '<img src="css/images/loading.gif" /> '  });
+	$.blockUI({
+		css : {
+			backgroundColor : '#0078AD',
+			color : '#fff',
+			top : '20%',
+			left : '30%'
+		},
+		message : '<img src="css/images/loading.gif" /> '
+	});
 	$.get("header.html", function(msg) {
 		$('#header').html(msg);
 		$.get("footer.html", function(footCont) {
@@ -19,17 +42,16 @@ $.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: 
 		});
 
 	});
-	
 
 	$('#tamanioLetra').slider({
 		min : 11,
 		max : 43,
-		value : 12,
+		value : 16,
 		step : 5,
 		change : function(event, ui) {
 			$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
 			$('.listaD > li').css("font-size", $('#tamanioLetra').slider("option", "value"));
-			
+
 			var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
 			//el 5 es por el padding
 			var altura2 = $("#cuerpo").height() * 1.1 + $("#cuerpoGrande").height() * 1.1;
@@ -37,89 +59,41 @@ $.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: 
 			$("#wrapper").height(altura1 < altura2 ? altura2 : altura1);
 		}
 	});
-	$('.ui-slider-handle').attr('tabindex',30);
-	var navegacion = {};	
-
-	navegacion["cyt"] = "pages/cyt/cytprincipal.html";
-	navegacion["cytini"] = "pages/cyt/inicial.html";
-	navegacion['cytsupcli'] = "pages/cyt/superclinica.html";
-	navegacion['cytfaciauto'] = "pages/cyt/facilitadores.html";
-	navegacion["cytsensi"] = "pages/cyt/sensibilizacion.html";
+	$('.ui-slider-handle').attr('tabindex', 30);
 
 	$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
 	$('.listaD > li').css("font-size", $('#tamanioLetra').slider("option", "value"));
 
 	$('#titulo').click(function() {
 
-			var linkS = $('.linkSeleccionado');
-
-			$(linkS).removeClass("linkSeleccionado");
-			$(this).addClass("linkSeleccionado");
-			linkS = this;
-
-			$('#cuerpo').fadeOut('slow', function() {
-				$('#cuerpo > #tituloSeccion').html($(linkS).html());
-				
-				$.get(navegacion[$(linkS).attr("rel")], function(msg) {
-					$('#cuerpoContenido').html(msg);
-					$('#cuerpo').fadeIn('slow');
-					//tomar tamaño letra elegido
-					$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
-					$('.listaD > li').css("font-size", $('#tamanioLetra').slider("option", "value"));
-					var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
-					//el 5 es por el padding
-					var altura2 = $("#cuerpo").height() * 1.1;
-					//el cuerpo crece con el contenido, al wrapper hay que hacerlo crecer
-					$("#wrapper").height(altura1 < altura2 ? altura2 : altura1);					
-					
-					//$('#cuerpoContenido').html('CAMBIO');
-					
-				});
-				
-			});
+		linkS = this;
+		cargarCuerpoCyT($(linkS).attr("rel"));
+		$(this).addClass("linkSeleccionado");
 		$(this).blur();
 	});
 	$('#titulo').keypress(function(e) {
-		if(e.which == 13) {//Enter key pressed
+		if (e.which == 13) {//Enter key pressed
 			$(this).click();
 			$(this).focus();
 			//Trigger search button click event
 		}
 	});
 
+	var a = window.location.toString();
+	var name = a.substring(a.indexOf("=") + 1);
+	cargarCuerpoCyT(name);
+
 	$('.linkNavegacion').each(function(index) {
 		$(this).click(function() {
 
-			var linkS = $('.linkSeleccionado');
-
-			$(linkS).removeClass("linkSeleccionado");
-			$(this).addClass("linkSeleccionado");
 			linkS = this;
 
-			$('#cuerpo').fadeOut('slow', function() {
-				$('#cuerpo > #tituloSeccion').html($(linkS).html());
-				
-				$.get(navegacion[$(linkS).attr("rel")], function(msg) {
-					$('#cuerpoContenido').html(msg);
-					$('#cuerpo').fadeIn('slow');
-					//tomar tamaño letra elegido
-					$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
-					$('.listaD > li').css("font-size", $('#tamanioLetra').slider("option", "value"));
-					var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
-					//el 5 es por el padding
-					var altura2 = $("#cuerpo").height() * 1.1;
-					//el cuerpo crece con el contenido, al wrapper hay que hacerlo crecer
-					$("#wrapper").height(altura1 < altura2 ? altura2 : altura1);					
-					$("#suscribir").leanModal({ top : 100, overlay : 0.4, closeButton: ".modal_close" });
-					//$('#cuerpoContenido').html('CAMBIO');
-					
-				});
-				
-			});
-		$(this).blur();
+			cargarCuerpoCyT($(linkS).attr("rel"));
+			$(this).addClass("linkSeleccionado");
+			$(this).blur();
 		});
 		$(this).keypress(function(e) {
-			if(e.which == 13) {//Enter key pressed
+			if (e.which == 13) {//Enter key pressed
 				$(this).click();
 				$(this).focus();
 				//Trigger search button click event
@@ -127,3 +101,29 @@ $.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: 
 		});
 	});
 });
+function cargarCuerpoCyT(nombre) {
+	if (nombre.length < 15) {
+		var linkS = $('.linkSeleccionado');
+
+		$(linkS).removeClass("linkSeleccionado");
+		$('#cuerpo').fadeOut('slow', function() {
+			$('#cuerpo > #tituloSeccion').html(titulos[nombre]);
+
+			$.get(navegacion[nombre], function(msg) {
+				$('#cuerpoContenido').html(msg);
+				$('#cuerpo').fadeIn('slow');
+				//tomar tamaño letra elegido
+				$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
+				$('.listaD > li').css("font-size", $('#tamanioLetra').slider("option", "value"));
+				var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
+				//el 5 es por el padding
+				var altura2 = $("#cuerpo").height() * 1.1;
+				//el cuerpo crece con el contenido, al wrapper hay que hacerlo crecer
+				$("#wrapper").height(altura1 < altura2 ? altura2 : altura1);
+
+				//$('#cuerpoContenido').html('CAMBIO');
+
+			});
+		});
+	}
+}
