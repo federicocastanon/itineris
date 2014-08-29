@@ -271,3 +271,12 @@
 .imagenNoticia img{
 	max-height: 200px;
 }
+.error, #ocurrioError{
+	color: #FF0000;
+	font-style: italic;
+}
+#muchasGracias{
+	color: #1C2172;
+	font-style: italic;
+}
+

@@ -27,13 +27,13 @@
 					</div>
 					<div id="terceraColumna"></div>
 				</div>
-				<h1 class="titulo">
+				<h1 class="titulo" id="tituloPrincipal">
 					Contacto
 				</h1>
-				<p class="titulomenor" style="max-width: 500px">
+				<p class="titulomenor" style="max-width: 500px" >
 					Si quiere recibir información sobre las actividades de la fundación Itineris o quiere hacernos una pregunta, envíenos su mensaje.
 				</p>
-				<form class="formContacto titulomenor" name="formu" id="formu" action="index.php?unirse=1&amp;ubi=0&amp;sububi=7" method="post" enctype="multipart/form-data">
+				<form class="formContacto titulomenor" name="formu" id="formu" method="post" >
 					<div class="campoForm">
 						<label for="nombre" class="requerido">Nombre y Apellido</label>
 						<input id="nombre" type="text" tabindex="31">
@@ -58,7 +58,7 @@
 						<span class="requerido">Los campos con </span><span> son datos imprescindibles para poder responderte</span>
 					</div>
 					<div class="botones">
-						<input type="button" value="Enviar" id="manda" name="manda" onclick="javascript:validar();" class="btnEnviar" tabindex="36">
+						<input type="button" value="Enviar" id="manda" name="manda" onclick="javascript:mandarMail();" class="btnEnviar" tabindex="36">
 						&nbsp;
 						<input type="reset" value="Borrar todo" class="btnEliminar" tabindex="37">
 					</div>

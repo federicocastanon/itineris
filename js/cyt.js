@@ -57,6 +57,11 @@ $(document).ready(function() {
 			var altura2 = $("#cuerpo").height() * 1.1 + $("#cuerpoGrande").height() * 1.1;
 			//el cuerpo crece con el contenido, al wrapper hay que hacerlo crecer
 			$("#wrapper").height(altura1 < altura2 ? altura2 : altura1);
+			$('#suscribir').leanModal({
+					top: 100,
+					overlay: 0.4,
+					closeButton: ".modal_close"
+				});
 		}
 	});
 	$('.ui-slider-handle').attr('tabindex', 30);
@@ -120,7 +125,11 @@ function cargarCuerpoCyT(nombre) {
 				var altura2 = $("#cuerpo").height() * 1.1;
 				//el cuerpo crece con el contenido, al wrapper hay que hacerlo crecer
 				$("#wrapper").height(altura1 < altura2 ? altura2 : altura1);
-
+				$('#suscribir').leanModal({
+					top: 100,
+					overlay: 0.4,
+					closeButton: ".modal_close"
+				});
 				//$('#cuerpoContenido').html('CAMBIO');
 
 			});
