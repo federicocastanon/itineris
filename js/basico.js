@@ -150,9 +150,9 @@ function mandarInscripcion(){
 		emailFrom : mail,
 		asunto : 'consulta de ' + nombre,
 		cuerpo : html
-	}, function(resu) {
+	}, function(data) {
 
-		if(resu.type == 'success') {
+		if(data == 'enviado') {
 			$("#suscripcion-header").before('<div id="muchasGracias"></div><p>Su inscripción fue enviada, le responderemos a la brevedad</p>');
 
 		} else {
