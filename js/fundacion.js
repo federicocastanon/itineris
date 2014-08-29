@@ -1,6 +1,18 @@
 $(document).ready(function() {
-$.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: '30%'},
-		message: '<img src="css/images/loading.gif" /> '  });
+	$.blockUI({
+		css : {
+			backgroundColor : '#0078AD',
+			color : '#fff',
+			top : '20%',
+			left : '30%'
+		},
+		overlayCSS : {
+			backgroundColor : '#3B3B3B',
+			opacity : 1,
+			cursor : 'wait'
+		},
+		message : '<img src="css/images/loading.gif" /> '
+	});
 	$.get("header.html", function(msg) {
 		$('#header').html(msg);
 		$.get("footer.html", function(footCont) {
@@ -36,8 +48,7 @@ $.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: 
 			$("#wrapper").height(altura1 < altura2 ? altura2 : altura1);
 		}
 	});
-	$('.ui-slider-handle').attr('tabindex',30);
-
+	$('.ui-slider-handle').attr('tabindex', 30);
 
 	var navegacion = {};
 
@@ -87,7 +98,7 @@ $.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: 
 		$(this).blur();
 	});
 	$('#titulo').keypress(function(e) {
-		if(e.which == 13) {//Enter key pressed
+		if (e.which == 13) {//Enter key pressed
 			$(this).click();
 			$(this).focus();
 			//Trigger search button click event
@@ -110,7 +121,7 @@ $.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: 
 				$.get(navegacion[$(linkS).attr("rel")], function(msg) {
 					$('#cuerpoContenido').html(msg);
 
-					if(nombreLink == 'estructura') {
+					if (nombreLink == 'estructura') {
 						$('#cuerpoGrande').css({
 							"min-width" : "850px"
 						});
@@ -144,7 +155,7 @@ $.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: 
 			$(this).blur();
 		});
 		$(this).keypress(function(e) {
-			if(e.which == 13) {//Enter key pressed
+			if (e.which == 13) {//Enter key pressed
 				$(this).click();
 				$(this).focus();
 				//Trigger search button click event

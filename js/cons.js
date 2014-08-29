@@ -24,6 +24,10 @@ $(document).ready(function() {
 			color : '#fff',
 			top : '20%',
 			left : '30%'
+		},overlayCSS : {
+			backgroundColor : '#3B3B3B',
+			opacity : 1,
+			cursor : 'wait'
 		},
 		message : '<img src="css/images/loading.gif" /> '
 	});
