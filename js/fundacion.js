@@ -17,7 +17,7 @@ $(document).ready(function() {
 		$('#header').html(msg);
 		$.get("footer.html", function(footCont) {
 			$('#footer').html(footCont);
-			$("#fondoHeader").height($("#header").height() - $("#menu").height() - 1);
+			$("#fondoHeader").height($("#header").height() - $("#menu").height() - 5);
 			var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
 			//el 5 es por el padding
 			var altura2 = $("#cuerpo").height() * 1.1 + $("#cuerpoGrande").height() * 1.1 + $("#cuerpoDonar").height() * 1.1;

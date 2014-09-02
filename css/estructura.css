@@ -41,7 +41,7 @@ a:hover{
 /* Menu style */
 .ei_menu{
 	background:#FFF;	
-	overflow:hidden;
+	//overflow:hidden;
 }
 .ei_menu ul{
 	height:200px;	
