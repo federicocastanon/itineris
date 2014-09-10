@@ -1,6 +1,21 @@
 $(document).ready(function() {
-	$.blockUI({ css: { backgroundColor: '#0078AD', color: '#fff', top: '20%', left: '30%'},
-		message: '<img src="css/images/loading.gif" /> '  });
+	$.blockUI({
+		css : {
+			backgroundColor : '#3B3B3B',
+			color : '#fff',
+			top : '20%',
+			left : '20%',
+			width : '0px',
+			height : '0px',
+			border: '0px'
+		},
+		overlayCSS : {
+			backgroundColor : '#3B3B3B',
+			opacity : 1,
+			cursor : 'wait'
+		},
+		message : '<img src="css/images/loading.gif" /> '
+	});
 	$.get("header.html", function(msg) {
 		$('#header').html(msg);
 		$.get("footer.html", function(footCont) {
@@ -29,22 +44,21 @@ $(document).ready(function() {
 			agrandarContacto();
 		}
 	});
-	$('.ui-slider-handle').attr('tabindex',30);
+	$('.ui-slider-handle').attr('tabindex', 30);
 
 });
-function agrandarContacto(){
+function agrandarContacto() {
 	$('#cuerpoContenido > p').css("font-size", $('#tamanioLetra').slider("option", "value"));
-			$('.campoForm').css("font-size", $('#tamanioLetra').slider("option", "value"));
-			var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
-			//el 5 es por el padding
-			var altura2 = $("#cuerpo").height() * 1.1 + $("#cuerpoGrande").height() * 1.1;
-			//el cuerpo crece con el contenido, al wrapper hay que hacerlo crecer
-			$("#wrapper").height(altura1 < altura2 ? altura2 : altura1);
+	$('.campoForm').css("font-size", $('#tamanioLetra').slider("option", "value"));
+	var altura1 = $("html").height() - $("#header").height() - $("#footer").height() - 5;
+	//el 5 es por el padding
+	var altura2 = $("#cuerpo").height() * 1.1 + $("#cuerpoGrande").height() * 1.1;
+	//el cuerpo crece con el contenido, al wrapper hay que hacerlo crecer
+	$("#wrapper").height(altura1 < altura2 ? altura2 : altura1);
 }
 
+function mandarMail() {
 
-function mandarMail(){
-		
 	var emailToVal = 'info@itineris.com.ar';
 	var nombre = $('#nombre').val();
 	var organizacion = $('#organizacion').val();
@@ -52,41 +66,34 @@ function mandarMail(){
 	var mail = $('#mail').val();
 	var consulta = $('#consulta').val();
 	var hasError = false;
-		var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-		$(".error").hide();
-		
-		
-		if(nombre == '') {
-			$("#nombre").after('<span class="error">No olvide ingresar su nombre</span>');
-			hasError = true;
-		}
-		
-		
-		if(mail == '') {
-			$("#mail").after('<span class="error">No olvide ingresar su correo electrónico</span>');
-			hasError = true;
-		} else if(!emailReg.test(mail)) {	
-			$("#mail").after('<span class="error">Es importante que ingrese una direccion de correo v&aacute;lida para que podamos ponernos en contacto con usted</span>');
-			hasError = true;
-		}
-		var regex = /[0-9]|\./;
-		
-		if( telefono != '' && !regex.test(telefono)) {
-			$("#telefono").after('<span class="error">Solo ponga n&uacute;meros en su teléfono!</span>');
-			hasError = true;
-		}
-		
-		
-		if(hasError){
-			agrandarContacto();
-			return false;
-		}
-	
-	
-	
-	
-	
-	var html = nombre + ' que de la organizacion ' + organizacion + ' cuyo teléfono es '+ telefono +' pregunta: \n' + consulta + '. Su correo es ' + mail;
+	var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+	$(".error").hide();
+
+	if (nombre == '') {
+		$("#nombre").after('<span class="error">No olvide ingresar su nombre</span>');
+		hasError = true;
+	}
+
+	if (mail == '') {
+		$("#mail").after('<span class="error">No olvide ingresar su correo electrónico</span>');
+		hasError = true;
+	} else if (!emailReg.test(mail)) {
+		$("#mail").after('<span class="error">Es importante que ingrese una direccion de correo v&aacute;lida para que podamos ponernos en contacto con usted</span>');
+		hasError = true;
+	}
+	var regex = /[0-9]|\./;
+
+	if (telefono != '' && !regex.test(telefono)) {
+		$("#telefono").after('<span class="error">Solo ponga n&uacute;meros en su teléfono!</span>');
+		hasError = true;
+	}
+
+	if (hasError) {
+		agrandarContacto();
+		return false;
+	}
+
+	var html = nombre + ' que de la organizacion ' + organizacion + ' cuyo teléfono es ' + telefono + ' pregunta: \n' + consulta + '. Su correo es ' + mail;
 	$.post("sendemail.php", {
 		emailTo : emailToVal,
 		emailFrom : mail,
@@ -94,7 +101,7 @@ function mandarMail(){
 		cuerpo : html
 	}, function(data) {
 
-		if(data == 'enviado') {
+		if (data == 'enviado') {
 			$("#tituloPrincipal").before('<div id="muchasGracias"></div><p>Su consulta fue enviada, le responderemos a la brevedad</p>');
 
 		} else {
@@ -102,10 +109,11 @@ function mandarMail(){
 		}
 		agrandarContacto();
 	});
-	
+
 }
-function mandarInscripcion(){
-		
+
+function mandarInscripcion() {
+
 	var emailToVal = 'info@itineris.com.ar';
 	var nombre = $('#nombre').val();
 	var organizacion = $('#organizacion').val();
@@ -113,38 +121,34 @@ function mandarInscripcion(){
 	var mail = $('#mail').val();
 	var curso = $('#curso').val();
 	var hasError = false;
-		var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
-		$(".error").hide();
-		
-		
-		if(nombre == '') {
-			$("#nombre").after('<span class="error">No olvide ingresar su nombre</span>');
-			hasError = true;
-		}
-		
-		
-		if(mail == '') {
-			$("#mail").after('<span class="error">No olvide ingresar su correo electrónico</span>');
-			hasError = true;
-		} else if(!emailReg.test(mail)) {	
-			$("#mail").after('<span class="error">Es importante que ingrese una direccion de correo v&aacute;lida para que podamos ponernos en contacto con usted</span>');
-			hasError = true;
-		}
-		var regex = /[0-9]|\./;
-		
-		if( telefono != '' && !regex.test(telefono)) {
-			$("#telefono").after('<span class="error">Solo ponga n&uacute;meros en su teléfono!</span>');
-			hasError = true;
-		}
-		
-		
-		if(hasError){
-			agrandarContacto();
-			return false;
-		}
-	
-	
-	var html = nombre + ' que de la organizacion ' + organizacion + ' cuyo teléfono es '+ telefono +' quiere inscribirse a : \n' + curso + '. Su correo es ' + mail;
+	var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+	$(".error").hide();
+
+	if (nombre == '') {
+		$("#nombre").after('<span class="error">No olvide ingresar su nombre</span>');
+		hasError = true;
+	}
+
+	if (mail == '') {
+		$("#mail").after('<span class="error">No olvide ingresar su correo electrónico</span>');
+		hasError = true;
+	} else if (!emailReg.test(mail)) {
+		$("#mail").after('<span class="error">Es importante que ingrese una direccion de correo v&aacute;lida para que podamos ponernos en contacto con usted</span>');
+		hasError = true;
+	}
+	var regex = /[0-9]|\./;
+
+	if (telefono != '' && !regex.test(telefono)) {
+		$("#telefono").after('<span class="error">Solo ponga n&uacute;meros en su teléfono!</span>');
+		hasError = true;
+	}
+
+	if (hasError) {
+		agrandarContacto();
+		return false;
+	}
+
+	var html = nombre + ' que de la organizacion ' + organizacion + ' cuyo teléfono es ' + telefono + ' quiere inscribirse a : \n' + curso + '. Su correo es ' + mail;
 	$.post("sendemail.php", {
 		emailTo : emailToVal,
 		emailFrom : mail,
@@ -152,7 +156,7 @@ function mandarInscripcion(){
 		cuerpo : html
 	}, function(data) {
 
-		if(data == 'enviado') {
+		if (data == 'enviado') {
 			$("#suscripcion-header").before('<div id="muchasGracias"></div><p>Su inscripción fue enviada, le responderemos a la brevedad</p>');
 
 		} else {

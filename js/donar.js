@@ -1,11 +1,15 @@
 $(document).ready(function() {
 	$.blockUI({
 		css : {
-			backgroundColor : '#0078AD',
+			backgroundColor : '#3B3B3B',
 			color : '#fff',
 			top : '20%',
-			left : '30%'
-		},overlayCSS : {
+			left : '20%',
+			width : '0px',
+			height : '0px',
+			border: '0px'
+		},
+		overlayCSS : {
 			backgroundColor : '#3B3B3B',
 			opacity : 1,
 			cursor : 'wait'
