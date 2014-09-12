@@ -305,7 +305,7 @@
 	color: #000;
 	font-size: 13px;
 	line-height: 20px;
-	text-align: justify;
+	
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -374,7 +374,7 @@
 }
 
 .book-1 .bk-cover h1 span:last-child, .book-1 .bk-left h1 span:last-child {
-	font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
+	font-family: Georgia, Times, "Times New Roman", serif;
 }
 
 .book-1 .bk-content p {
@@ -386,7 +386,7 @@
 	font-size: 13px;
 	line-height: 40px;
 	padding-right: 10px;
-	text-align: right;
+	text-align: center;
 }
 
 .book-1 .bk-back p {
@@ -464,15 +464,22 @@
 	left: 101px;
 }
 
+.book-2 .bk-left h1 span:first-child {
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 13px;
+	padding-right: 20px;
+}
+
 .book-2 .bk-left h1 {
-	font-size: 20px;
+	font-size: 14px;
 	line-height: 40px;
 	padding-right: 10px;
-	text-align: right;
+	text-align: center;
 }
 
 .book-2 .bk-back p {
-	color: red;
+	color: #FFFFFF;
 	font-size: 13px;
 	font-family: "Big Caslon", "Book Antiqua", "Palatino Linotype", Georgia, serif;
 	padding: 40px;

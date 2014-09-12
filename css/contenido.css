@@ -279,4 +279,6 @@
 	color: #1C2172;
 	font-style: italic;
 }
-
+.oculto{
+	display: none;
+}

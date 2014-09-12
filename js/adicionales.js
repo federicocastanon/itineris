@@ -9,13 +9,14 @@ $(document).ready(function() {
 			height : '0px',
 			border: '0px'
 		},overlayCSS : {
-			backgroundColor : '#3B3B3B',
+			backgroundColor : '#D1CCCD',
 			opacity : 1,
 			cursor : 'wait'
 		},
 		message : '<img src="css/images/loading.gif" /> '
 	});
 	$.get("header.html", function(msg) {
+		$('body').removeClass('oculto');
 		$('#header').html(msg);
 		$.get("footer.html", function(footCont) {
 			$('#footer').html(footCont);
