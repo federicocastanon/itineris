@@ -89,6 +89,9 @@ $(document).ready(function() {
 					});
 					$('#cbu').click();
 				});
+				$('.tarjeta').click(function() {
+					window.open('https://donaronline.org/fundacion-itineris/en-que-transformamos-tu-colaboracion', '_blank');
+				});
 				//$('#cuerpoContenido').html('CAMBIO');
 
 			});
@@ -146,6 +149,9 @@ $(document).ready(function() {
 			closeButton : ".modal_close"
 		});
 		$('#cbu').click();
+	});
+	$('.tarjeta').click(function() {
+		window.open('https://donaronline.org/fundacion-itineris/en-que-transformamos-tu-colaboracion', '_blank');
 	});
 
 });
