@@ -82,7 +82,7 @@
 	width: 65px;
 	background-image: url('images/pdf_ico.png');
 }
-#suscripcion {
+#suscripcion,#cbumodal {
 	display: none;
 	background: #FFF;
 	border-radius: 0px;
@@ -177,6 +177,11 @@
 	min-height: 150px;
 	display: inline-block;
 }
+#wrapComo div{
+	float: left;
+	width: 40%;
+	margin-left: 8%;
+}
 
 #wrapSenDvdRev {
 	width: 100%;
@@ -194,22 +199,32 @@
 	padding-top: 100px;
 	background: url('images/tarjeta.png') no-repeat; 
 }
+.tarjeta:hover{
+	background: url('images/tarjeta_onhover.png') no-repeat;
+	cursor: pointer;
+}
 .transferencia{
 	padding-top: 100px;
 	background: url('images/transferencia.png') no-repeat;
+}
+.transferencia:hover{
+	background: url('images/transferencia_onhover.png') no-repeat;
+	cursor:pointer;
 }
 .mensaje{
 	padding-top: 100px;
 	background: url('images/mensaje.png') no-repeat;
 }
-
+#cbu{
+	display: none;
+}
 .tituloDonar{
 	font-size: 35px;	
 	font-family: acLight;
 	color: #0078ad;	
 	margin: 10px 0px 25px 0px;
 	font-style: italic;
-	text-align: left;
+	text-align: center;
 }
 #senialadores {
 	background: url('images/senialadores.png') no-repeat;

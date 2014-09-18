@@ -7,7 +7,7 @@ $(document).ready(function() {
 			left : '20%',
 			width : '0px',
 			height : '0px',
-			border: '0px'
+			border : '0px'
 		},
 		overlayCSS : {
 			backgroundColor : '#D1CCCD',
@@ -56,7 +56,7 @@ $(document).ready(function() {
 			$("#wrapperDonar").height(altura1 < altura2 ? altura2 : altura1);
 		}
 	});
-	$('.ui-slider-handle').attr('tabindex',30);
+	$('.ui-slider-handle').attr('tabindex', 30);
 	$('.texto').css("font-size", $('#tamanioLetra').slider("option", "value"));
 
 	$('#titulo').click(function() {
@@ -67,8 +67,7 @@ $(document).ready(function() {
 		$(this).addClass("linkSeleccionado");
 		linkS = this;
 
-		$('#cuerpoContenido').fadeOut('slow', function() {
-			$
+		$('#cuerpoContenido').fadeOut('slow', function() { $
 			$.get(navegacion[$(linkS).attr("rel")], function(msg) {
 				$('#cuerpoContenido').html(msg);
 				$('#cuerpoContenido').fadeIn('slow');
@@ -82,6 +81,14 @@ $(document).ready(function() {
 				//el cuerpo crece con el contenido, al wrapper hay que hacerlo crecer
 				$("#wrapperDonar").height(altura1 < altura2 ? altura2 : altura1);
 
+				$('.transferencia').click(function() {
+					$('#cbu').leanModal({
+						top : 100,
+						overlay : 0.4,
+						closeButton : ".modal_close"
+					});
+					$('#cbu').click();
+				});
 				//$('#cuerpoContenido').html('CAMBIO');
 
 			});
@@ -89,7 +96,7 @@ $(document).ready(function() {
 		$(this).blur();
 	});
 	$('#titulo').keypress(function(e) {
-		if(e.which == 13) {//Enter key pressed
+		if (e.which == 13) {//Enter key pressed
 			$(this).click();
 			$(this).focus();
 			//Trigger search button click event
@@ -118,19 +125,27 @@ $(document).ready(function() {
 					//el 5 es por el padding
 					var altura2 = $("#cuerpoContenido").height() * 1.2;
 					//el cuerpo crece con el contenido, al wrapper hay que hacerlo crecer
-					$("#wrapperDonar").height(altura1 < altura2 ? altura2 : altura1);					
-					
+					$("#wrapperDonar").height(altura1 < altura2 ? altura2 : altura1);
 
 				});
 			});
 			$(this).blur();
 		});
 		$(this).keypress(function(e) {
-			if(e.which == 13) {//Enter key pressed
+			if (e.which == 13) {//Enter key pressed
 				$(this).click();
 				$(this).focus();
 				//Trigger search button click event
 			}
 		});
 	});
+	$('.transferencia').click(function() {
+		$('#cbu').leanModal({
+			top : 100,
+			overlay : 0.4,
+			closeButton : ".modal_close"
+		});
+		$('#cbu').click();
+	});
+
 });

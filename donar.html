@@ -5,7 +5,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 		<meta name="description" content="Talleres de capacitación en discapacidad mental, Argentina, latinoamerica, escalas de evaluación de autodeterminacion, vida independiente, congresos" />
 		<meta name="keywords" content="Discapacidad Mental Argentina latinoamerica talleres capacitación vida independiente autodeterminación asesoría "/>
-		
+
 		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen"/>
 		<link rel="stylesheet" href="css/contenido.css" type="text/css" media="screen"/>
 		<link rel="shortcut icon" href="css/img/favicon.png" />
@@ -14,6 +14,29 @@
 		<script type="text/javascript" src="js/jqueryuimin.js"></script>
 		<script type="text/javascript" src="js/jquery.blockUI.js"></script>
 		<script type="text/javascript" src="js/donar.js"></script>
+		<script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+		<style>
+			#lean_overlay {
+				position: fixed;
+				z-index: 100;
+				top: 0px;
+				left: 0px;
+				height: 100%;
+				width: 100%;
+				background: #000;
+				display: none;
+			}
+			.modal_close {
+				position: absolute;
+				top: 12px;
+				right: 12px;
+				display: block;
+				width: 14px;
+				height: 14px;
+				background: url(css/images/modal_close.png);
+				z-index: 2;
+			}
+		</style>
 	</head>
 	<body class="oculto">
 		<div id="header"></div>
@@ -44,7 +67,7 @@
 					<div id="terceraColumna"></div>
 				</div>
 				<div id="cuerpoContenido">
-					
+
 					<div id="wrapParaQue">
 						<h1 class="tituloDonar">¿Para qué?</h1>
 						<div class="donarTercio">
@@ -56,7 +79,7 @@
 						<div class="donarTercio">
 							<h2 class="titulo">Informarte</h2>
 							<p class="texto">
-								sobre la evoolución del proyecto que apoyás
+								sobre la evolución del proyecto que apoyás
 							</p>
 						</div>
 						<div class="donarTercio">
@@ -68,14 +91,45 @@
 					</div>
 					<div id="wrapComo">
 						<h1 class="tituloDonar">¿Cómo?</h1>
-						<div class="donarTercio tarjeta texto">Usando tu tarjeta de crédito o débito</div>
-						<div class="donarTercio transferencia texto">Haciendo una transferencia bancaria</div>
-						<div class="donarTercio mensaje texto">Enviándonos un mensaje</div>
-					</div>					
-					
+						<div class="tarjeta texto">
+							Usando tu tarjeta de crédito o débito desde donaronline
+						</div>
+						<div class="transferencia texto">
+							Haciendo una transferencia bancaria
+						</div>
+
+					</div>
+
 				</div>
 			</div>
 		</div>
 		<div id="footer"></div>
+
+		<a id="cbu" href="#cbumodal" tabindex="31" ></a>
+		<div id="cbumodal">
+			<div id="suscripcionContainer">
+				<div id="suscripcion-header">
+					<div class="titulo grande">
+						Datos para la transferencia
+					</div>
+					<p class="mediano">
+						Fundacion Itineris
+						<br />
+						CUIT: 30-33300316-4
+						<br />
+						Banco de Galicia
+						<br />
+						Cuenta Corriente nro 436346463463463
+						<br />
+						CBU: 432232626236236236
+					</p>
+					<p class="mediano">
+						Por favor acompañe su transferencia con un mail a info@itineris.org.ar, nos gustaría agradecerle su apoyo
+					</p>
+					<a class="modal_close" href="#" tabindex="37"></a>
+				</div>
+
+			</div>
+		</div>
 	</body>
 </html>
