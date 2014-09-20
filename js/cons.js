@@ -9,7 +9,7 @@ navegacion["optimizacion"] = "pages/consultoria/optimizacion.html";
 
 var titulos = {};
 
-titulos["auditoriaycerti"] = "Auditoria y Certificación de Calidad";
+titulos["audycerti"] = "Auditoria y Certificación de Calidad";
 titulos["capaysuper"] = "Capacitación y Supervisión";
 titulos['consultoria'] = "Consultoría para Organizaciones";
 titulos['desaproy'] = "Desarrollo de proyectos ";
