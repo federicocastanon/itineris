@@ -90,7 +90,7 @@ $(document).ready(function() {
 					$('#cbu').click();
 				});
 				$('.tarjeta').click(function() {
-					window.open('https://donaronline.org/fundacion-itineris/en-que-transformamos-tu-colaboracion', '_blank');
+					window.open('https://www.donaronline.org/fundacion-itineris/en-que-nos-ayudas-para-lograr-la-vivienda-independiente', '_blank');
 				});
 				//$('#cuerpoContenido').html('CAMBIO');
 
@@ -151,7 +151,7 @@ $(document).ready(function() {
 		$('#cbu').click();
 	});
 	$('.tarjeta').click(function() {
-		window.open('https://donaronline.org/fundacion-itineris/en-que-transformamos-tu-colaboracion', '_blank');
+		window.open('https://www.donaronline.org/fundacion-itineris/en-que-nos-ayudas-para-lograr-la-vivienda-independiente', '_blank');
 	});
 
 });

@@ -343,11 +343,11 @@
 
 /* Book 1 */
 .book-1 .bk-front > div, .book-1 .bk-back, .book-1 .bk-left, .book-1 .bk-front:after {
-	background-color: #871C2C;
+	background-color: #426D96;
 }
 
 .book-1 .bk-cover {
-	background-image: url(images/tapason.jpg);
+	background-image: url('images/tapason_agotado.jpg');
 	background-repeat: no-repeat;
 }
 
@@ -399,11 +399,11 @@
 /* Book 2 */
 
 .book-2 .bk-front > div, .book-2 .bk-back, .book-2 .bk-left, .book-2 .bk-front:after {
-	background-color: #871C2C;
+	background-color: #31A797;
 }
 
 .book-2 .bk-cover {
-	background-image: url(images/taparosario.jpg);
+	background-image: url('images/tapavida.jpg');
 	background-repeat: no-repeat;
 	background-position: 98% 0%;
 }

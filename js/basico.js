@@ -60,7 +60,7 @@ function agrandarContacto() {
 
 function mandarMail() {
 
-	var emailToVal = 'info@itineris.com.ar';
+	var emailToVal = 'info@itineris.org.ar';
 	var nombre = $('#nombre').val();
 	var organizacion = $('#organizacion').val();
 	var telefono = $('#telefono').val();
@@ -106,7 +106,7 @@ function mandarMail() {
 			$("#tituloPrincipal").before('<div id="muchasGracias"></div><p>Su consulta fue enviada, le responderemos a la brevedad</p>');
 
 		} else {
-			$("#tituloPrincipal").before('<div id="ocurrioError"><h1>Atención!</h1><p>Ocurrió un error y su consulta no fue enviada! Por favor intente nuevamente o escribanos un correo a info@itineris.com.ar </p></div>');
+			$("#tituloPrincipal").before('<div id="ocurrioError"><h1>Atención!</h1><p>Ocurrió un error y su consulta no fue enviada! Por favor intente nuevamente o escribanos un correo a info@itineris.org.ar </p></div>');
 		}
 		agrandarContacto();
 	});
@@ -115,7 +115,7 @@ function mandarMail() {
 
 function mandarInscripcion() {
 
-	var emailToVal = 'info@itineris.com.ar';
+	var emailToVal = 'info@itineris.org.ar';
 	var nombre = $('#nombre').val();
 	var organizacion = $('#organizacion').val();
 	var telefono = $('#telefono').val();
@@ -161,7 +161,7 @@ function mandarInscripcion() {
 			$("#suscripcion-header").before('<div id="muchasGracias"></div><p>Su inscripción fue enviada, le responderemos a la brevedad</p>');
 
 		} else {
-			$("#suscripcion-header").before('<div id="ocurrioError"><h1>Atención!</h1><p>Ocurrió un error y su inscripción no fue enviada! Por favor intente nuevamente o escribanos un correo a info@itineris.com.ar </p></div>');
+			$("#suscripcion-header").before('<div id="ocurrioError"><h1>Atención!</h1><p>Ocurrió un error y su inscripción no fue enviada! Por favor intente nuevamente o escribanos un correo a info@itineris.org.ar </p></div>');
 		}
 		agrandarContacto();
 	});
