@@ -29,7 +29,7 @@ $(document).ready(function() {
 			$("#wrapper").height(altura1 < altura2 ? altura2 : altura1);
 			//el 5 es por el padding
 			$('#logo').click(function() {
-				window.location.href = "home.html";
+				window.location.href = "index.html";
 			});
 			$.unblockUI();
 		});

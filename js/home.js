@@ -49,6 +49,12 @@ function agrandar(objeto) {
 	}
 }
 
+function linkear(linkId){
+	$(linkId).click();
+	//$(location).attr('href', link);
+	//return true;
+}
+
 
 $(document).ready(function() {
 	$.blockUI({
@@ -82,7 +88,7 @@ $(document).ready(function() {
 			$("#wrapper").height(altura1 < altura2 ? altura2 : altura1);
 			//el 5 es por el padding
 			$('#logo').click(function() {
-				window.location.href = "home.html";
+				window.location.href = "index.html";
 			});
 			$('.imagenPrincipal > ul').height($(".imagenPrincipal").height());
 			$('.imagenPrincipal').unslider({
@@ -111,7 +117,7 @@ $(document).ready(function() {
 				var clase = $(this).attr('class');
 				var guardarAltura;
 				if(clase == 'linkHome agrandable') {
-					guardarAltura = '45%';
+					guardarAltura = '55%';
 				} else {
 					guardarAltura = '65%';
 				}
@@ -141,4 +147,25 @@ $(document).ready(function() {
 			event.preventDefault();
 		});
 	});
+	$('#linkHome1').each(function(){
+		$(this).click(function() {
+		window.location = 'http://www.revistanc.org.ar';
+		});
+	});
+	$('#linkHome2').each(function(){
+		$(this).click(function() {
+		window.location = 'https://www.facebook.com/Congreso-Internacional-de-Discapacidad-Intelectual-1678666902414681/?ref=settings';
+		});
+	});
+	$('#linkHome3').each(function(){
+		$(this).click(function() {
+		window.location = 'consultoria.html';
+		});
+	});
+	$('#linkHome4').each(function(){
+		$(this).click(function() {
+		window.location = 'cursosytalleres.html?rel=cytsupcli';
+		});
+	});
+	
 });

@@ -62,7 +62,7 @@
 }
 
 .linkHome h1{
-	font-size: 16px;
+	font-size: 15px;
 	font-family: acLight;
 	color: #0078ad;
 	padding: 4% 10% 0 3%;
@@ -73,11 +73,15 @@
 	font-size:  12px;
 	font-family: roboto;
 	color: #0078ad;
-	height: 45%;
+	height: 55%;
 	overflow: hidden;
-	padding: 0 10% 0 3%;
+	padding: 5% 10% 0 3%;
 	cursor: pointer;
 	margin: 0px;
+}
+.linkHome p img{
+	height: 100%;
+	padding: 0 0 0 25%;
 }
 .linkHomeST p{
 	font-size:  12px;

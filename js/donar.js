@@ -29,7 +29,7 @@ $(document).ready(function() {
 			$("#wrapperDonar").height(altura1 < altura2 ? altura2 : altura1);
 			//el 5 es por el padding
 			$('#logo').click(function() {
-				window.location.href = "home.html";
+				window.location.href = "index.html";
 			});
 			$.unblockUI();
 		});
@@ -58,7 +58,7 @@ $(document).ready(function() {
 	});
 	$('.ui-slider-handle').attr('tabindex', 30);
 	$('.texto').css("font-size", $('#tamanioLetra').slider("option", "value"));
-
+/*
 	$('#titulo').click(function() {
 
 		var linkS = $('.linkSeleccionado');
@@ -81,7 +81,7 @@ $(document).ready(function() {
 				//el cuerpo crece con el contenido, al wrapper hay que hacerlo crecer
 				$("#wrapperDonar").height(altura1 < altura2 ? altura2 : altura1);
 
-				$('.transferencia').click(function() {
+				$('.datosTransf').click(function() {
 					$('#cbu').leanModal({
 						top : 100,
 						overlay : 0.4,
@@ -97,15 +97,9 @@ $(document).ready(function() {
 			});
 		});
 		$(this).blur();
-	});
-	$('#titulo').keypress(function(e) {
-		if (e.which == 13) {//Enter key pressed
-			$(this).click();
-			$(this).focus();
-			//Trigger search button click event
-		}
-	});
-
+	});*/
+	
+/*
 	$('.linkNavegacion').each(function(index) {
 		$(this).click(function() {
 
@@ -141,8 +135,9 @@ $(document).ready(function() {
 				//Trigger search button click event
 			}
 		});
-	});
-	$('.transferencia').click(function() {
+	});*/
+	
+	$('.datosTransf').click(function() {
 		$('#cbu').leanModal({
 			top : 100,
 			overlay : 0.4,
@@ -151,7 +146,24 @@ $(document).ready(function() {
 		$('#cbu').click();
 	});
 	$('.tarjeta').click(function() {
-		window.open('https://www.donaronline.org/fundacion-itineris/en-que-nos-ayudas-para-lograr-la-vivienda-independiente', '_blank');
+		window.open('https://donaronline.org/fundacion-itineris/con-tu-aporte-desarrollamos-estas-acciones', '_blank');
 	});
+	$('#linkImagen1').each(function(){
+		$(this).click(function() {
+		window.open('https://donaronline.org/fundacion-itineris/con-tu-ayuda-los-autogestores', '_blank');
+		});
+	});
+	$('#linkImagen2').each(function(){
+		$(this).click(function() {
+		window.open( 'https://donaronline.org/fundacion-itineris/tu-ayuda-se-transforma-en', '_blank');
+		});
+	});
+	$('#linkImagen3').each(function(){
+		$(this).click(function() {
+		window.open( 'https://donaronline.org/fundacion-itineris/con-tu-aporte-desarrollamos-estas-acciones', '_blank');
+		});
+	});
+	
+	
 
 });

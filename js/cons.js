@@ -6,15 +6,17 @@ navegacion['consultoria'] = "pages/consultoria/consultoriaprincipal.html";
 navegacion['desaproy'] = "pages/consultoria/desaproy.html";
 navegacion["escalas"] = "pages/consultoria/escalas.html";
 navegacion["optimizacion"] = "pages/consultoria/optimizacion.html";
+navegacion["super"] = "pages/consultoria/supervision.html";
 
 var titulos = {};
 
 titulos["audycerti"] = "Auditoria y Certificación de Calidad";
-titulos["capaysuper"] = "Capacitación y Supervisión";
+titulos["capaysuper"] = "Capacitación Institucional";
 titulos['consultoria'] = "Consultoría para Organizaciones";
 titulos['desaproy'] = "Desarrollo de proyectos ";
 titulos["escalas"] = "Escalas y cuestionarios";
 titulos["optimizacion"] = "Programa de optimización institucional";
+titulos["super"] = "Supervisión";
 
 $(document).ready(function() {
 
@@ -48,7 +50,7 @@ $(document).ready(function() {
 			$("#wrapper").height(altura1 < altura2 ? altura2 : altura1);
 			//el 5 es por el padding
 			$('#logo').click(function() {
-				window.location.href = "home.html";
+				window.location.href = "index.html";
 			});
 			$.unblockUI();
 		});

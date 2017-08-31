@@ -142,7 +142,7 @@
 	width: 100%;
 	float: left;
 }
-#suscribir {
+.suscribir {
 	background: url('images/button_inscribirse.png');
 	width: 215px;
 	height: 79px;
@@ -151,7 +151,7 @@
 	display: block;
 	float: left;
 }
-#suscribir:hover {
+.suscribir:hover {
 	background: url('images/button_inscribirse_onhover.png');
 }
 .botonFormulario button {
@@ -194,6 +194,22 @@
 	height: 100%;
 	float: left;
 	text-align: center;
+}
+.donarTercio .titulo{
+	height: 70px;
+}
+.donarTercio .texto{
+	padding: 20px 5px 5px 10px;	
+	text-align: center;
+}
+
+.donarTercio img{
+	width: 100%;
+	cursor: pointer;
+	-webkit-transition: all 1s ease;
+}
+.donarTercio img:hover{
+	-webkit-filter: grayscale(100%);
 }
 .tarjeta{
 	padding-top: 100px;
