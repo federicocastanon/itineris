@@ -103,7 +103,10 @@ $(document).ready(function() {
 			});
 			var timer;
 			var delay = 500;
-
+			var ancho = $('#linkHome1').width() * 0.7;
+				$('.imagenLinkHome').each(function(index) {
+					$(this).css("max-width", ancho);
+				});
 			//setTimeout($.unblockUI, 20000);
 			$.unblockUI();
 
@@ -154,7 +157,7 @@ $(document).ready(function() {
 	});
 	$('#linkHome2').each(function(){
 		$(this).click(function() {
-		window.location = 'https://www.facebook.com/Congreso-Internacional-de-Discapacidad-Intelectual-1678666902414681/?ref=settings';
+		window.location = 'https://docs.google.com/forms/d/1_nTqzK1paAplm_TzXuYUt5nn88mVTaZmYKYmrgmXbxg/edit';
 		});
 	});
 	$('#linkHome3').each(function(){

@@ -77,6 +77,7 @@ h1, h2, h3, h4 {
 	margin-top: 1em;
 	border: 0px solid #1C2172;
 	border-right-width: 1px;
+	min-width: fit-content;
 }
 .itemmenu:hover {
 	text-shadow: 0 0 10px #fff;;
@@ -506,4 +507,7 @@ h1, h2, h3, h4 {
 }
 .oculto{
 	display: none;
+}
+.imagenLinkHome{
+	/*height: 80%;*/
 }
