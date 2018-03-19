@@ -152,7 +152,7 @@ $(document).ready(function() {
 	});
 	$('#linkHome1').each(function(){
 		$(this).click(function() {
-		window.location = 'http://www.revistanc.org.ar';
+		window.location = 'https://drive.google.com/open?id=1zSLopOADESiqHMPhwOtMLB24zuuRxdf_ZoM7fn2WGTs';
 		});
 	});
 	$('#linkHome2').each(function(){
