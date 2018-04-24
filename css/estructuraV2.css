@@ -65,7 +65,7 @@ a:hover{
 	position:absolute;
 	top:0px;
 	left:0px;
-	background:transparent url(images/nombres.png) no-repeat top left;
+	background:transparent url(images/nombresV2.png) no-repeat top left;
 }
 .ei_image{
 	position:absolute;
@@ -74,7 +74,7 @@ a:hover{
 	width:178px;
 	height:200px;
 	opacity:0.2;
-	background:transparent url(images/fotos.jpg) no-repeat top left;
+	background:transparent url(images/fotosV2.jpg) no-repeat top left;
 }
 .pos1 .ei_preview{
 	background-position:0px 0px;
