@@ -68,15 +68,15 @@ $(document).ready(function() {
 
 	navegacion["desta"] = "pages/biblioteca/destacados.html";
 	navegacion["nove"] = "pages/biblioteca/novedades.html";
-	navegacion["calVi"] = "pages/biblioteca/calidadDeVida.html";
-	navegacion['autoDet'] = "pages/biblioteca/autodeterminacion.html";
+	navegacion["calVi"] = "pages/biblioteca/calidadDeVidaV2.html";
+	navegacion['autoDet'] = "pages/biblioteca/autodeterminacionV2.html";
 	navegacion['derechos'] = "pages/biblioteca/derechos.html";
 	navegacion["inclu"] = "pages/biblioteca/inclusion.html";
 	navegacion["traInst"] = "pages/biblioteca/trabajoinstitucional.html";
 	navegacion["autoGes"] = "pages/biblioteca/autogestion.html";
 	navegacion["familias"] = "pages/biblioteca/familias.html";
-	navegacion["educacion"] = "pages/biblioteca/educacion.html";
-	navegacion["vidaIndi"] = "pages/biblioteca/vidaIndependiente.html";
+	navegacion["educacion"] = "pages/biblioteca/educacionV2.html";
+	navegacion["vidaIndi"] = "pages/biblioteca/vidaIndependienteV2.html";
 
 	var valor = $('#tamanioLetra').slider("option", "value");
 	$('#cuerpoContenido > p').css("font-size", valor);
